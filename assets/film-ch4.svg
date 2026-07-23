@@ -8,8 +8,14 @@
     <radialGradient id="blockGlow" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="#8FA8F5" stop-opacity="0.5"/><stop offset="0.5" stop-color="#5B6EE8" stop-opacity="0.22"/><stop offset="1" stop-color="#5B6EE8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="mindGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#9DB8FF" stop-opacity="0.8"/><stop offset="0.45" stop-color="#4E6ED8" stop-opacity="0.35"/><stop offset="1" stop-color="#4E6ED8" stop-opacity="0"/>
+    <radialGradient id="glowCl" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFC9AE" stop-opacity="0.8"/><stop offset="0.45" stop-color="#D97757" stop-opacity="0.35"/><stop offset="1" stop-color="#D97757" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9FF2D9" stop-opacity="0.8"/><stop offset="0.45" stop-color="#10A37F" stop-opacity="0.35"/><stop offset="1" stop-color="#10A37F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGe" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#B8D4FF" stop-opacity="0.8"/><stop offset="0.45" stop-color="#4E8DF5" stop-opacity="0.35"/><stop offset="1" stop-color="#4E8DF5" stop-opacity="0"/>
     </radialGradient>
     <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer></filter>
     <filter id="blurFg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
@@ -17,13 +23,13 @@
     <!-- cute glowing circuit-brain · one mind -->
     <g id="brain">
       <path d="M0 -26 C -8 -34 -24 -32 -28 -22 C -40 -20 -44 -6 -36 0 C -42 8 -36 20 -26 22 C -22 30 -8 32 0 26 C 8 32 22 30 26 22 C 36 20 42 8 36 0 C 44 -6 40 -20 28 -22 C 24 -32 8 -34 0 -26 Z"
-            fill="#0A0F1E" fill-opacity="0.8" stroke="#7B8FE8" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M0 -26 C 2 -12 -2 12 0 26" stroke="#4A5CC0" stroke-width="1.5" fill="none"/>
-      <g stroke="#9DB8FF" stroke-width="1.4" fill="none" stroke-linecap="round">
+            fill="#0A0F1E" fill-opacity="0.8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M0 -26 C 2 -12 -2 12 0 26" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5" fill="none"/>
+      <g stroke="currentColor" stroke-opacity="0.85" stroke-width="1.4" fill="none" stroke-linecap="round">
         <path d="M-20 -10 h8 v8"/><path d="M-24 8 h7"/><path d="M-10 14 v-7 h-5"/>
         <path d="M20 -12 v8 h-7"/><path d="M24 6 h-7 v7"/><path d="M10 -16 v6"/>
       </g>
-      <g fill="#C8D6FF">
+      <g fill="currentColor">
         <circle cx="-12" cy="-2" r="1.9"/><circle cx="-17" cy="8" r="1.9"/>
         <circle cx="13" cy="-4" r="1.9"/><circle cx="17" cy="13" r="1.9"/><circle cx="10" cy="-10" r="1.9"/><circle cx="-10" cy="14" r="1.9"/>
       </g>
@@ -127,34 +133,34 @@
     <!-- CLAUDE · top -->
     <g>
       <g class="m0">
-        <circle cx="1300" cy="240" r="60" fill="url(#mindGlow)"/>
-        <circle cx="1300" cy="240" r="16" fill="none" stroke="#9DB8FF"><animate attributeName="r" values="16;54;16" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="1300" cy="240" r="60" fill="url(#glowCl)"/>
+        <circle cx="1300" cy="240" r="16" fill="none" stroke="#F5B08E"><animate attributeName="r" values="16;54;16" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
         <path class="flick" d="M1284 232 q8 -10 16 0 q8 10 16 0" stroke="#EC7BC8" stroke-width="1.6" fill="none"/>
         <path class="flick2" d="M1288 250 q7 8 14 0 q7 -8 14 0" stroke="#EC7BC8" stroke-width="1.3" fill="none"/>
       </g>
-      <use href="#brain" transform="translate(1300,240) scale(1.2)"/>
+      <use href="#brain" color="#E0885A" transform="translate(1300,240) scale(1.2)"/>
       <circle cx="1300" cy="240" r="3.6" fill="#F0F3FF"><animate attributeName="r" values="3.6;5;3.6" dur="2.6s" repeatCount="indefinite"/></circle>
       <text x="1300" y="168" text-anchor="middle" class="mname">CLAUDE</text>
     </g>
     <!-- GPT · lower left -->
     <g>
       <g class="m1">
-        <circle cx="1170" cy="520" r="56" fill="url(#mindGlow)"/>
-        <circle cx="1170" cy="520" r="15" fill="none" stroke="#9DB8FF"><animate attributeName="r" values="15;50;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="1170" cy="520" r="56" fill="url(#glowGp)"/>
+        <circle cx="1170" cy="520" r="15" fill="none" stroke="#6FE0BD"><animate attributeName="r" values="15;50;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
         <path class="flick" d="M1156 512 q7 -9 14 0 q7 9 14 0" stroke="#EC7BC8" stroke-width="1.5" fill="none"/>
       </g>
-      <use href="#brain" transform="translate(1170,520)"/>
+      <use href="#brain" color="#26B896" transform="translate(1170,520)"/>
       <circle cx="1170" cy="520" r="3.2" fill="#F0F3FF"><animate attributeName="r" values="3.2;4.5;3.2" dur="2.9s" repeatCount="indefinite"/></circle>
       <text x="1170" y="596" text-anchor="middle" class="mname">GPT</text>
     </g>
     <!-- GEMINI · lower right -->
     <g>
       <g class="m2">
-        <circle cx="1430" cy="500" r="56" fill="url(#mindGlow)"/>
-        <circle cx="1430" cy="500" r="15" fill="none" stroke="#9DB8FF"><animate attributeName="r" values="15;50;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="1430" cy="500" r="56" fill="url(#glowGe)"/>
+        <circle cx="1430" cy="500" r="15" fill="none" stroke="#93BCF9"><animate attributeName="r" values="15;50;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite"/></circle>
         <path class="flick2" d="M1416 492 q7 -9 14 0 q7 9 14 0" stroke="#EC7BC8" stroke-width="1.5" fill="none"/>
       </g>
-      <use href="#brain" transform="translate(1430,500)"/>
+      <use href="#brain" color="#5E97F6" transform="translate(1430,500)"/>
       <circle cx="1430" cy="500" r="3.2" fill="#F0F3FF"><animate attributeName="r" values="3.2;4.5;3.2" dur="3.1s" repeatCount="indefinite"/></circle>
       <text x="1430" y="576" text-anchor="middle" class="mname">GEMINI</text>
     </g>

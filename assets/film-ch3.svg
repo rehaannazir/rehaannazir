@@ -51,8 +51,8 @@
       @keyframes gateGlint{0%{transform:translateY(0);opacity:0}15%{opacity:0.9}55%{opacity:0.9}70%,100%{transform:translateY(270px);opacity:0}}
       .gateGlint{animation:gateGlint 4s ease-in-out infinite}
 
-      @keyframes galaxySpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-      .galaxy{transform-origin:1430px 390px;animation:galaxySpin 200s linear infinite}
+      @keyframes galaxySway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+      .galaxy{transform-origin:1430px 395px;animation:galaxySway 26s ease-in-out infinite}
       @keyframes gtw{0%,100%{opacity:0.45}50%{opacity:1}}
       .g1{animation:gtw 3.2s ease-in-out infinite}
       .g2{animation:gtw 4.4s ease-in-out infinite -1.2s}
@@ -131,34 +131,39 @@
     </g>
     <!-- newborn stars drifting into the galaxy -->
     <g fill="#9FEAF6">
-      <circle r="2.6"><animateMotion dur="4s" begin="-1.7s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.57;0.95;1" path="M880 400 C 1060 372 1200 330 1330 316"/><animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.57;0.62;0.92;1" dur="4s" begin="-1.7s" repeatCount="indefinite"/></circle>
-      <circle r="2.6"><animateMotion dur="4s" begin="-3.7s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.57;0.95;1" path="M880 480 C 1070 470 1230 480 1400 470"/><animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.57;0.62;0.92;1" dur="4s" begin="-3.7s" repeatCount="indefinite"/></circle>
+      <circle r="2.6"><animateMotion dur="4s" begin="-1.7s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.57;0.95;1" path="M880 400 C 1060 380 1220 390 1359 402"/><animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.57;0.62;0.92;1" dur="4s" begin="-1.7s" repeatCount="indefinite"/></circle>
+      <circle r="2.6"><animateMotion dur="4s" begin="-3.7s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.57;0.95;1" path="M880 480 C 1070 490 1260 510 1439 516"/><animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.57;0.62;0.92;1" dur="4s" begin="-3.7s" repeatCount="indefinite"/></circle>
     </g>
 
-    <!-- ============ THE VECTOR GALAXY ============ -->
-    <ellipse cx="1430" cy="390" rx="330" ry="260" fill="url(#galaxyGlow)"/>
+    <!-- ============ THE VECTOR DATABASE · cylinder with spiral memory ============ -->
+    <ellipse cx="1430" cy="395" rx="330" ry="260" fill="url(#galaxyGlow)"/>
+    <g stroke="#1E5560" stroke-width="2">
+      <path d="M1190 210 V560 A240 55 0 0 0 1670 560 V210" fill="#06262C" fill-opacity="0.16"/>
+      <ellipse cx="1430" cy="335" rx="240" ry="55" fill="none" opacity="0.18"/>
+      <ellipse cx="1430" cy="460" rx="240" ry="55" fill="none" opacity="0.18"/>
+      <ellipse cx="1430" cy="210" rx="240" ry="55" fill="#04181C" fill-opacity="0.5"/>
+    </g>
     <g class="galaxy">
-      <!-- constellation web -->
-      <g stroke="#10333B" stroke-width="1.2">
-        <path d="M1330 280 L1372 262 M1372 262 L1400 310 M1400 310 L1330 280 M1400 310 L1348 330"/>
-        <path d="M1500 330 L1552 340 M1552 340 L1530 390 M1530 390 L1500 330 M1552 340 L1580 300"/>
-        <path d="M1395 460 L1450 470 M1450 470 L1420 520 M1420 520 L1395 460 M1450 470 L1480 510 M1395 460 L1360 510"/>
-        <path d="M1400 310 L1500 330 M1530 390 L1450 470 M1348 330 L1395 460 M1580 300 L1620 430"/>
+      <!-- spiral arm -->
+      <path d="M1442 395 L1450 405 L1443 419 L1419 429 L1386 424 L1359 402 L1355 368 L1383 335 L1439 318 L1506 328 L1557 368 L1567 427 L1525 484 L1439 516 L1336 506 L1255 452 L1229 369"
+            stroke="#10333B" stroke-width="1.2" fill="none"/>
+      <!-- neural cross-links -->
+      <g stroke="#0E2A31" stroke-width="1">
+        <path d="M1443 419 L1383 335 M1386 424 L1439 318 M1506 328 L1567 427 M1359 402 L1255 452 M1525 484 L1336 506"/>
       </g>
       <g fill="#67D8E8">
-        <circle class="g1" cx="1330" cy="280" r="2.6"/><circle class="g2" cx="1372" cy="262" r="2.2"/>
-        <circle class="g3" cx="1400" cy="310" r="3.2"/><circle class="g1" cx="1348" cy="330" r="2"/>
-        <circle class="g2" cx="1500" cy="330" r="3"/><circle class="g3" cx="1552" cy="340" r="2.4"/>
-        <circle class="g1" cx="1530" cy="390" r="2.6"/><circle class="g2" cx="1580" cy="300" r="2.2"/>
-        <circle class="g3" cx="1395" cy="460" r="2.8"/><circle class="g1" cx="1450" cy="470" r="3.2"/>
-        <circle class="g2" cx="1420" cy="520" r="2.4"/><circle class="g3" cx="1480" cy="510" r="2.2"/>
-        <circle class="g1" cx="1360" cy="510" r="2"/><circle class="g2" cx="1620" cy="430" r="2.4"/>
-        <circle class="g3" cx="1650" cy="480" r="2"/><circle class="g1" cx="1600" cy="250" r="2.2"/>
-        <circle class="g2" cx="1680" cy="380" r="2"/><circle class="g3" cx="1300" cy="420" r="2.2"/>
-        <circle class="g1" cx="1280" cy="350" r="2"/>
+        <circle class="g1" cx="1442" cy="395" r="2"/><circle class="g2" cx="1450" cy="405" r="2"/>
+        <circle class="g3" cx="1443" cy="419" r="2.2"/><circle class="g1" cx="1419" cy="429" r="2"/>
+        <circle class="g2" cx="1386" cy="424" r="2.2"/><circle class="g3" cx="1359" cy="402" r="2.4"/>
+        <circle class="g1" cx="1355" cy="368" r="2.2"/><circle class="g2" cx="1383" cy="335" r="2.4"/>
+        <circle class="g3" cx="1439" cy="318" r="2.8"/><circle class="g1" cx="1506" cy="328" r="2.4"/>
+        <circle class="g2" cx="1557" cy="368" r="2.8"/><circle class="g3" cx="1567" cy="427" r="2.4"/>
+        <circle class="g1" cx="1525" cy="484" r="2.8"/><circle class="g2" cx="1439" cy="516" r="2.6"/>
+        <circle class="g3" cx="1336" cy="506" r="2.4"/><circle class="g1" cx="1255" cy="452" r="2.2"/>
+        <circle class="g2" cx="1229" cy="369" r="2.2"/>
       </g>
     </g>
-    <text x="1430" y="690" text-anchor="middle" class="clbl">VECTOR SPACE · SIMILARITY SEARCH</text>
+    <text x="1430" y="690" text-anchor="middle" class="clbl">VECTOR DATABASE · SIMILARITY SEARCH</text>
 
     <!-- ============ THE QUERY · context strand from Ch.2 ============ -->
     <path class="feed" d="M-20 620 C 400 610 900 560 1430 390" stroke="#3E6FB8" stroke-width="1.8" opacity="0.4"/>
@@ -166,23 +171,24 @@
       <animateMotion dur="8s" begin="0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.25;1" path="M-20 620 C 400 610 900 560 1430 390"/>
       <animate attributeName="opacity" values="0.95;0.95;0;0" keyTimes="0;0.25;0.42;1" dur="8s" begin="0s" repeatCount="indefinite"/>
     </circle>
-    <!-- radar sweep -->
-    <circle cx="1430" cy="390" r="12" fill="none" stroke="#7FE3F2" stroke-width="1.6">
-      <animate attributeName="r" values="12;12;250;250" keyTimes="0;0.25;0.52;1" dur="8s" repeatCount="indefinite"/>
+    <!-- radar sweep · elliptical wave inside the cylinder -->
+    <ellipse cx="1430" cy="395" rx="12" ry="8" fill="none" stroke="#7FE3F2" stroke-width="1.6">
+      <animate attributeName="rx" values="12;12;225;225" keyTimes="0;0.25;0.52;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="8;8;150;150" keyTimes="0;0.25;0.52;1" dur="8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.85;0;0" keyTimes="0;0.25;0.52;1" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <!-- nearest neighbors ignite -->
+    </ellipse>
+    <!-- nearest neighbors ignite along the spiral -->
     <g fill="#F2FDFF">
-      <circle cx="1400" cy="310" r="4.6"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4;0.46;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
-      <circle cx="1500" cy="330" r="4.2"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.42;0.48;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
-      <circle cx="1450" cy="470" r="4.6"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.44;0.5;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
-      <circle cx="1360" cy="510" r="4"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.46;0.52;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1439" cy="318" r="4.6"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4;0.46;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1557" cy="368" r="4.2"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.42;0.48;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1525" cy="484" r="4.6"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.44;0.5;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1336" cy="506" r="4"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.46;0.52;0.72;0.82;1" dur="8s" repeatCount="indefinite"/></circle>
     </g>
     <g stroke="#BFF3FB" stroke-width="1.4">
-      <path d="M1430 390 L1400 310"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.46;0.52;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
-      <path d="M1430 390 L1500 330"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.47;0.53;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
-      <path d="M1430 390 L1450 470"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.48;0.54;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
-      <path d="M1430 390 L1360 510"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.49;0.55;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
+      <path d="M1430 395 L1439 318"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.46;0.52;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
+      <path d="M1430 395 L1557 368"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.47;0.53;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
+      <path d="M1430 395 L1525 484"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.48;0.54;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
+      <path d="M1430 395 L1336 506"><animate attributeName="opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.49;0.55;0.7;0.8;1" dur="8s" repeatCount="indefinite"/></path>
     </g>
     <!-- retrieved knowledge exits toward Ch.4 -->
     <circle r="5.5" fill="#D9FAFF">
