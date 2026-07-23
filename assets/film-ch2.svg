@@ -17,6 +17,39 @@
     </radialGradient>
     <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer></filter>
     <filter id="blurFg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <radialGradient id="icGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C4B5FD" stop-opacity="0.45"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- raw input glyphs · violet before refraction -->
+    <g id="icVoice" stroke="currentColor" fill="none" stroke-linecap="round">
+      <rect x="-4" y="-11" width="8" height="13" rx="4" stroke-width="1.8"/>
+      <path d="M-7.5 -1 a7.5 7.5 0 0 0 15 0" stroke-width="1.8"/>
+      <path d="M0 6.5 v4.5 M-4.5 11 h9" stroke-width="1.8"/>
+    </g>
+    <g id="icText" stroke="currentColor" fill="none" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-11 -9 h22 v14 h-13 l-6 6 v-6 h-3 z" stroke-width="1.8"/>
+      <path d="M-6 -4 h12 M-6 0 h8" stroke-width="1.6"/>
+    </g>
+    <g id="icImage" stroke="currentColor" fill="none" stroke-linejoin="round">
+      <rect x="-11" y="-9" width="22" height="18" rx="3" stroke-width="1.8"/>
+      <circle cx="-4.5" cy="-3.5" r="2.3" fill="currentColor" stroke="none"/>
+      <path d="M-10 7 L-3 0 L1 4 L5 1 L10 6" stroke-width="1.8"/>
+    </g>
+    <g id="icDocs" stroke="currentColor" fill="none" stroke-linejoin="round">
+      <path d="M-8 -11 h11 l6 6 v16 h-17 z" stroke-width="1.8"/>
+      <path d="M3 -11 v6 h6" stroke-width="1.5"/>
+      <path d="M-4 1 h9 M-4 5 h9 M-4 9 h6" stroke-width="1.5"/>
+    </g>
+    <g id="icApi" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-4 -9 L-12 0 L-4 9" stroke-width="2"/>
+      <path d="M4 -9 L12 0 L4 9" stroke-width="2"/>
+      <path d="M1.5 -10 L-1.5 10" stroke-width="2"/>
+    </g>
+    <g id="icEmail" stroke="currentColor" fill="none" stroke-linejoin="round">
+      <rect x="-12" y="-8" width="24" height="16" rx="2.5" stroke-width="1.8"/>
+      <path d="M-12 -6 L0 3 L12 -6" stroke-width="1.8"/>
+    </g>
 
     <style>
       .cap{font:600 21px ui-monospace,Consolas,monospace;fill:#F1EDFB;letter-spacing:5px}
@@ -122,12 +155,12 @@
 
     <!-- ============ METEORS · raw requests above the beam ============ -->
     <g stroke-linecap="round">
-      <g transform="translate(460,0)"><g class="fall d0"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">VOICE</text></g></g>
-      <g transform="translate(640,0)"><g class="fall d1"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">TEXT</text></g></g>
-      <g transform="translate(820,0)"><g class="fall d2"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">IMAGE</text></g></g>
-      <g transform="translate(1000,0)"><g class="fall d3"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">DOCS</text></g></g>
-      <g transform="translate(1180,0)"><g class="fall d4"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">API</text></g></g>
-      <g transform="translate(1360,0)"><g class="fall d5"><line x1="0" y1="0" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="5.5" fill="#E9DFFF"/><text x="16" y="5" class="mlbl">EMAIL</text></g></g>
+      <g transform="translate(460,0)"><g class="fall d0"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icVoice" color="#E9DFFF"/><text x="22" y="5" class="mlbl">VOICE</text></g></g>
+      <g transform="translate(640,0)"><g class="fall d1"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icText" color="#E9DFFF"/><text x="22" y="5" class="mlbl">TEXT</text></g></g>
+      <g transform="translate(820,0)"><g class="fall d2"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icImage" color="#E9DFFF"/><text x="22" y="5" class="mlbl">IMAGE</text></g></g>
+      <g transform="translate(1000,0)"><g class="fall d3"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icDocs" color="#E9DFFF"/><text x="22" y="5" class="mlbl">DOCS</text></g></g>
+      <g transform="translate(1180,0)"><g class="fall d4"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icApi" color="#E9DFFF"/><text x="22" y="5" class="mlbl">API</text></g></g>
+      <g transform="translate(1360,0)"><g class="fall d5"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icEmail" color="#E9DFFF"/><text x="22" y="5" class="mlbl">EMAIL</text></g></g>
     </g>
 
     <!-- refraction flashes at each crossing -->
