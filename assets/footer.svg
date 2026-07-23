@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="900" height="130" fill="none" role="img" aria-label="footer">
+  <defs>
+    <linearGradient id="fg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8CFF"/><stop offset="0.5" stop-color="#B96BFF"/><stop offset="1" stop-color="#22D3EE"/>
+      <animate attributeName="x1" values="0;-1;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;2;1" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="fgl" cx="0.5" cy="0" r="0.8">
+      <stop offset="0" stop-color="#7A4BFF" stop-opacity="0.35"/><stop offset="1" stop-color="#7A4BFF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .q{font:600 18px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#D8D8E6}
+      .s{font:500 12px ui-monospace,Consolas,monospace;fill:#5A5A72;letter-spacing:2px}
+      @keyframes p{0%,100%{r:2}50%{r:4}}
+      .dot{animation:p 2s ease-in-out infinite}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="128" rx="16" fill="#0A0A0F" stroke="#1C1C28"/>
+  <ellipse cx="450" cy="0" rx="400" ry="90" fill="url(#fgl)"/>
+  <line x1="150" y1="40" x2="750" y2="40" stroke="url(#fg)" stroke-width="1.5" opacity="0.5"/>
+  <text x="450" y="70" text-anchor="middle" class="q">“Data is the truth. AI is the intelligence.”</text>
+  <text x="450" y="102" text-anchor="middle" class="s">BUILDING NEXARA — PAKISTAN'S LARGEST AI COMPANY</text>
+  <circle class="dot" cx="360" cy="98" r="2" fill="#5B8CFF"/>
+  <circle class="dot" cx="540" cy="98" r="2" fill="#B96BFF"/>
+</svg>
