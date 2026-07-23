@@ -22,8 +22,8 @@
     <g id="paper"><rect x="0" y="0" width="118" height="150" rx="7" stroke-width="3"/><path d="M20 38 h78 M20 66 h78 M20 94 h52" stroke-width="3"/></g>
 
     <style>
-      .cap{font:500 15px ui-monospace,Consolas,monospace;fill:#8F87AC;letter-spacing:4px}
-      .slate{font:600 11px ui-monospace,Consolas,monospace;fill:#5A5470;letter-spacing:4px}
+      .cap{font:600 21px ui-monospace,Consolas,monospace;fill:#F1EDFB;letter-spacing:5px}
+      .slate{font:600 11px ui-monospace,Consolas,monospace;fill:#A29BC0;letter-spacing:4px}
       .ez{animation-timing-function:cubic-bezier(0.45,0.05,0.25,1)}
 
       /* ---------- master 13s timeline ---------- */
@@ -44,9 +44,9 @@
       @keyframes tail{0%,36%{opacity:0}42%,66%{opacity:1}73%,100%{opacity:0}}
       .tail{animation:tail 13s linear infinite}
 
-      @keyframes cap1{0%,14%{opacity:0}20%,29%{opacity:0.8}35%,100%{opacity:0}}
+      @keyframes cap1{0%,14%{opacity:0}20%,29%{opacity:1}35%,100%{opacity:0}}
       .cap1{animation:cap1 13s linear infinite}
-      @keyframes cap2{0%,80%{opacity:0}85%,93%{opacity:0.8}97.5%,100%{opacity:0}}
+      @keyframes cap2{0%,80%{opacity:0}85%,93%{opacity:1}97.5%,100%{opacity:0}}
       .cap2{animation:cap2 13s linear infinite}
 
       @keyframes ring1{0%,73%{stroke-dashoffset:566;opacity:0}74.5%{opacity:1}82%{stroke-dashoffset:0}94%{opacity:1;stroke-dashoffset:0}98%,100%{opacity:0;stroke-dashoffset:0}}
@@ -160,11 +160,11 @@
   <g class="portal"><circle cx="960" cy="400" r="120" stroke="#C4B5FD" stroke-width="2.5"/></g>
   <rect class="wash" width="1920" height="800" fill="url(#portalWash)"/>
 
-  <!-- ============ TITLES / CHROME ============ -->
-  <text x="960" y="580" text-anchor="middle" class="cap cap1">every system begins with a request.</text>
-  <text x="960" y="580" text-anchor="middle" class="cap cap2">the answer — build intelligence.</text>
-  <text x="66" y="66" class="slate" opacity="0.6">CH 01 · THE PROBLEM</text>
-
   <rect width="1920" height="800" fill="url(#vig)"/>
   <rect width="1920" height="800" filter="url(#grain)" opacity="0.5"/>
+
+  <!-- ============ TITLES / CHROME · above the grade so they stay bright ============ -->
+  <text x="960" y="580" text-anchor="middle" class="cap cap1">every system begins with a request.</text>
+  <text x="960" y="580" text-anchor="middle" class="cap cap2">the answer — build intelligence.</text>
+  <text x="66" y="66" class="slate" opacity="0.9">CH 01 · THE PROBLEM</text>
 </svg>
