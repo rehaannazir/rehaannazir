@@ -17,9 +17,12 @@
     </radialGradient>
     <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.032"/></feComponentTransfer></filter>
     <filter id="blurFg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
-    <radialGradient id="icGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#C4B5FD" stop-opacity="0.45"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
-    </radialGradient>
+    <radialGradient id="gVoice" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F0A868" stop-opacity="0.45"/><stop offset="1" stop-color="#F0A868" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gText" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C4B5FD" stop-opacity="0.45"/><stop offset="1" stop-color="#C4B5FD" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gImage" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4ADE80" stop-opacity="0.45"/><stop offset="1" stop-color="#4ADE80" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gDocs" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gApi" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#A78BFA" stop-opacity="0.45"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gEmail" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F87171" stop-opacity="0.45"/><stop offset="1" stop-color="#F87171" stop-opacity="0"/></radialGradient>
 
     <!-- raw input glyphs · violet before refraction -->
     <g id="icVoice" stroke="currentColor" fill="none" stroke-linecap="round">
@@ -155,12 +158,12 @@
 
     <!-- ============ METEORS · raw requests above the beam ============ -->
     <g stroke-linecap="round">
-      <g transform="translate(460,0)"><g class="fall d0"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icVoice" color="#E9DFFF"/><text x="22" y="5" class="mlbl">VOICE</text></g></g>
-      <g transform="translate(640,0)"><g class="fall d1"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icText" color="#E9DFFF"/><text x="22" y="5" class="mlbl">TEXT</text></g></g>
-      <g transform="translate(820,0)"><g class="fall d2"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icImage" color="#E9DFFF"/><text x="22" y="5" class="mlbl">IMAGE</text></g></g>
-      <g transform="translate(1000,0)"><g class="fall d3"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icDocs" color="#E9DFFF"/><text x="22" y="5" class="mlbl">DOCS</text></g></g>
-      <g transform="translate(1180,0)"><g class="fall d4"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icApi" color="#E9DFFF"/><text x="22" y="5" class="mlbl">API</text></g></g>
-      <g transform="translate(1360,0)"><g class="fall d5"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.5"/><circle r="22" fill="url(#icGlow)"/><use href="#icEmail" color="#E9DFFF"/><text x="22" y="5" class="mlbl">EMAIL</text></g></g>
+      <g transform="translate(460,0)"><g class="fall d0"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#F0A868" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gVoice)"/><use href="#icVoice" color="#F0A868"/><text x="22" y="5" class="mlbl">VOICE</text></g></g>
+      <g transform="translate(640,0)"><g class="fall d1"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#C4B5FD" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gText)"/><use href="#icText" color="#C4B5FD"/><text x="22" y="5" class="mlbl">TEXT</text></g></g>
+      <g transform="translate(820,0)"><g class="fall d2"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#4ADE80" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gImage)"/><use href="#icImage" color="#4ADE80"/><text x="22" y="5" class="mlbl">IMAGE</text></g></g>
+      <g transform="translate(1000,0)"><g class="fall d3"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#22D3EE" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gDocs)"/><use href="#icDocs" color="#22D3EE"/><text x="22" y="5" class="mlbl">DOCS</text></g></g>
+      <g transform="translate(1180,0)"><g class="fall d4"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#A78BFA" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gApi)"/><use href="#icApi" color="#A78BFA"/><text x="22" y="5" class="mlbl">API</text></g></g>
+      <g transform="translate(1360,0)"><g class="fall d5"><line x1="-6" y1="-6" x2="-34" y2="-124" stroke="#F87171" stroke-width="3" opacity="0.45"/><circle r="22" fill="url(#gEmail)"/><use href="#icEmail" color="#F87171"/><text x="22" y="5" class="mlbl">EMAIL</text></g></g>
     </g>
 
     <!-- refraction flashes at each crossing -->
