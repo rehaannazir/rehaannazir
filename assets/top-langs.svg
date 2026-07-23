@@ -18,14 +18,15 @@
   <text x="458" y="28" text-anchor="end" class="sub">@rehaannazir</text>
   <line x1="20" y1="38" x2="460" y2="38" stroke="#17141C"/>
 
-  <!-- donut: real byte-share across non-fork repos -->
+  <!-- donut: real byte-share across non-fork repos — widened violet/indigo/magenta
+       palette + small gaps between arcs so slices stay distinguishable -->
   <g class="donut">
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#A855F7" stroke-width="16" stroke-dasharray="251.2 88.1" stroke-dashoffset="0"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#C084FC" stroke-width="16" stroke-dasharray="37.7 301.6" stroke-dashoffset="-251.2"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#7C3AED" stroke-width="16" stroke-dasharray="27.2 312.1" stroke-dashoffset="-288.9"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#D8B4FE" stroke-width="16" stroke-dasharray="8.9 330.4" stroke-dashoffset="-316.1"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#E9D5FF" stroke-width="16" stroke-dasharray="8.8 330.5" stroke-dashoffset="-325.0"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#5B3D82" stroke-width="16" stroke-dasharray="5.5 333.8" stroke-dashoffset="-333.8"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#A855F7" stroke-width="16" stroke-dasharray="233.6 105.7" stroke-dashoffset="0"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#4C1D95" stroke-width="16" stroke-dasharray="35.0 304.3" stroke-dashoffset="-237.6"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#F0ABFC" stroke-width="16" stroke-dasharray="25.2 314.1" stroke-dashoffset="-276.6"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#818CF8" stroke-width="16" stroke-dasharray="8.2 331.1" stroke-dashoffset="-305.8"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#F5D0FE" stroke-width="16" stroke-dasharray="8.2 331.1" stroke-dashoffset="-318.0"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#6D28D9" stroke-width="16" stroke-dasharray="5.0 334.3" stroke-dashoffset="-330.2"/>
   </g>
   <circle cx="90" cy="100" r="38" fill="#000000"/>
   <text x="90" y="97" text-anchor="middle" class="pc" font-size="15" fill="#E9D5FF">6</text>
@@ -34,10 +35,10 @@
   <!-- legend -->
   <g>
     <g class="row" style="animation-delay:.1s"><circle cx="196" cy="52" r="5" fill="#A855F7"/><text x="210" y="56" class="lg">Jupyter Notebook</text><text x="458" y="56" text-anchor="end" class="pc">74.1%</text></g>
-    <g class="row" style="animation-delay:.2s"><circle cx="196" cy="76" r="5" fill="#C084FC"/><text x="210" y="80" class="lg">JavaScript</text><text x="458" y="80" text-anchor="end" class="pc">11.1%</text></g>
-    <g class="row" style="animation-delay:.3s"><circle cx="196" cy="100" r="5" fill="#7C3AED"/><text x="210" y="104" class="lg">Python</text><text x="458" y="104" text-anchor="end" class="pc">8.0%</text></g>
-    <g class="row" style="animation-delay:.4s"><circle cx="196" cy="124" r="5" fill="#D8B4FE"/><text x="210" y="128" class="lg">TypeScript</text><text x="458" y="128" text-anchor="end" class="pc">2.6%</text></g>
-    <g class="row" style="animation-delay:.5s"><circle cx="196" cy="148" r="5" fill="#E9D5FF"/><text x="210" y="152" class="lg">HTML</text><text x="458" y="152" text-anchor="end" class="pc">2.6%</text></g>
-    <g class="row" style="animation-delay:.6s"><circle cx="196" cy="172" r="5" fill="#5B3D82"/><text x="210" y="176" class="lg">CSS</text><text x="458" y="176" text-anchor="end" class="pc">1.6%</text></g>
+    <g class="row" style="animation-delay:.2s"><circle cx="196" cy="76" r="5" fill="#4C1D95"/><text x="210" y="80" class="lg">JavaScript</text><text x="458" y="80" text-anchor="end" class="pc">11.1%</text></g>
+    <g class="row" style="animation-delay:.3s"><circle cx="196" cy="100" r="5" fill="#F0ABFC"/><text x="210" y="104" class="lg">Python</text><text x="458" y="104" text-anchor="end" class="pc">8.0%</text></g>
+    <g class="row" style="animation-delay:.4s"><circle cx="196" cy="124" r="5" fill="#818CF8"/><text x="210" y="128" class="lg">TypeScript</text><text x="458" y="128" text-anchor="end" class="pc">2.6%</text></g>
+    <g class="row" style="animation-delay:.5s"><circle cx="196" cy="148" r="5" fill="#F5D0FE"/><text x="210" y="152" class="lg">HTML</text><text x="458" y="152" text-anchor="end" class="pc">2.6%</text></g>
+    <g class="row" style="animation-delay:.6s"><circle cx="196" cy="172" r="5" fill="#6D28D9"/><text x="210" y="176" class="lg">CSS</text><text x="458" y="176" text-anchor="end" class="pc">1.6%</text></g>
   </g>
 </svg>
