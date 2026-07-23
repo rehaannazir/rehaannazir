@@ -231,10 +231,12 @@ where new orchestration ideas get prototyped before they ship.
 ## `07` — Signals
 
 <!--
-  These stat cards render live data and therefore depend on community
-  services (github-readme-stats, streak-stats, komarev). They are the
-  standard tools used across GitHub. If you prefer zero external
-  dependencies, delete this section — everything else is self-hosted.
+  Stats + Top Languages below are self-hosted SVGs (assets/stats-card.svg,
+  assets/top-langs.svg), generated from real public GitHub API data —
+  no third-party rendering service, so they can never 503 or rate-limit.
+  Views / Streak / Activity Graph still call small community badge
+  services (komarev, streak-stats, vercel activity-graph) since those
+  need to update live; they're independently confirmed working.
 -->
 
 <div align="center">
@@ -245,12 +247,12 @@ where new orchestration ideas get prototyped before they ship.
 
 <br/><br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=rehaannazir&show_icons=true&hide_border=true&bg_color=000000&title_color=A855F7&icon_color=A855F7&text_color=C9C4D4&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rehaannazir&layout=compact&hide_border=true&bg_color=000000&title_color=A855F7&text_color=C9C4D4&langs_count=8" />
+<img height="195" src="assets/stats-card.svg" alt="GitHub stats" />
+<img height="195" src="assets/top-langs.svg" alt="Top languages" />
 
 <br/><br/>
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rehaannazir&hide_border=true&background=000000&ring=A855F7&fire=C084FC&currStreakNum=C9C4D4&sideNums=C9C4D4&currStreakLabel=A855F7&sideLabels=8A8698&dates=4A4458" />
+<img width="60%" src="https://streak-stats.demolab.com/?user=rehaannazir&hide_border=true&background=000000&ring=A855F7&fire=C084FC&currStreakNum=C9C4D4&sideNums=C9C4D4&currStreakLabel=A855F7&sideLabels=8A8698&dates=4A4458" />
 
 <br/><br/>
 
