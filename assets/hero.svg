@@ -1,87 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" fill="none" role="img" aria-label="Rehan Nazir — AI Production Systems Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" fill="none" role="img" aria-label="Rehan Nazir — AI Production Systems Engineer">
   <defs>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F2F2F6"/>
-      <stop offset="0.6" stop-color="#D8C2F5"/>
-      <stop offset="1" stop-color="#A855F7"/>
-      <animate attributeName="x1" values="0;-0.4;0" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="1;1.4;1" dur="9s" repeatCount="indefinite"/>
+    <linearGradient id="nm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4F2F8"/><stop offset="0.65" stop-color="#D3BEF4"/><stop offset="1" stop-color="#A855F7"/>
+      <animate attributeName="x1" values="0;-0.4;0" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;1.4;1" dur="10s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A855F7" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#A855F7"/>
-      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    <linearGradient id="tick" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A855F7"/><stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17171C"/><stop offset="0.5" stop-color="#0C0C10"/><stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+    <linearGradient id="metalV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#050506"/><stop offset="0.5" stop-color="#161620"/><stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.20"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="type"><rect x="118" y="230" width="0" height="24"><animate attributeName="width" values="0;0;424;424;0" keyTimes="0;0.06;0.46;0.86;1" dur="7.5s" repeatCount="indefinite"/></rect></clipPath>
+    <radialGradient id="coreG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E9D5FF"/><stop offset="0.4" stop-color="#A855F7"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="visorG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C084FC" stop-opacity="0.9"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
     <style>
-      .name{font:800 58px 'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:3px}
-      .role{font:600 18px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#B8B4C4;letter-spacing:7px}
-      .meta{font:600 12px ui-monospace,Consolas,monospace;fill:#8A8698;letter-spacing:1px}
-      .tag{font:500 16px ui-monospace,Consolas,monospace;fill:#C9A9F5}
-      .dim{fill:#4A4458}
-      @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-      .cursor{animation:blink 1.05s step-end infinite}
-      @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-      .f1{animation:fl 7s ease-in-out infinite}
-      @keyframes sig{to{stroke-dashoffset:-40}}
-      .sig{stroke-dasharray:3 7;animation:sig 1.6s linear infinite}
+      .name{font:800 56px 'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:4px}
+      .role{font:600 16px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#B4AEC2;letter-spacing:8px}
+      .meta{font:600 12px ui-monospace,Consolas,monospace;fill:#7C7690;letter-spacing:1px}
+      .holo{font:600 10px ui-monospace,Consolas,monospace;fill:#B98BF0;letter-spacing:2px}
+      .edge{stroke:#5B3D82;stroke-width:1.2}
+      .edgeHi{stroke:#8B5CF6;stroke-width:1.2}
+      .panelln{stroke:#2A2233;stroke-width:1}
+      @keyframes drift{0%{opacity:0;transform:translateY(6px)}30%{opacity:.9}100%{opacity:0;transform:translateY(-22px)}}
+      .p1{animation:drift 6s ease-in-out infinite}
+      .p2{animation:drift 7.5s ease-in-out infinite 1s}
+      .p3{animation:drift 8.5s ease-in-out infinite 2.5s}
+      .p4{animation:drift 7s ease-in-out infinite 3.5s}
+      @keyframes flick{0%,100%{opacity:.55}50%{opacity:.9}}
+      .hp{animation:flick 4s ease-in-out infinite}
+      @keyframes stream{to{stroke-dashoffset:-30}}
+      .stream{stroke-dasharray:2 6;animation:stream 1.4s linear infinite}
     </style>
   </defs>
 
-  <rect x="1" y="1" width="898" height="318" rx="20" fill="#000000" stroke="#17141C"/>
-  <circle cx="120" cy="80" r="200" fill="url(#glow)"/>
+  <rect x="1" y="1" width="898" height="398" rx="22" fill="#000000" stroke="#161219"/>
+  <ellipse cx="690" cy="210" rx="230" ry="210" fill="url(#amb)"/>
 
-  <!-- faint circuit traces, top-right corner -->
-  <g stroke="#2A2233" stroke-width="1" opacity="0.9">
-    <path d="M900 40 H770 V90 H700"/>
-    <path d="M900 120 H820 V70"/>
-    <path d="M760 20 V70 H700"/>
-  </g>
-  <g class="sig" stroke="#A855F7" stroke-width="1.2" opacity="0.8">
-    <path d="M900 40 H770 V90 H700"/>
-    <path d="M760 20 V70 H700"/>
-  </g>
-  <g fill="#A855F7"><circle cx="700" cy="90" r="2.5"/><circle cx="700" cy="70" r="2.5"/><circle cx="820" cy="120" r="2.5"/></g>
+  <!-- ==================== LEFT: TEXT ==================== -->
+  <rect x="56" y="120" width="70" height="2" rx="1" fill="url(#tick)"><animate attributeName="width" values="0;70" dur="1.2s" fill="freeze"/></rect>
+  <text x="54" y="196" class="name" fill="url(#nm)">REHAN NAZIR</text>
+  <text x="58" y="230" class="role">AI PRODUCTION SYSTEMS ENGINEER</text>
+  <circle cx="62" cy="264" r="3" fill="#A855F7"/><text x="74" y="268" class="meta">3rd-YEAR DATA SCIENCE STUDENT</text>
+  <circle cx="346" cy="264" r="3" fill="#A855F7"/><text x="358" y="268" class="meta">FOUNDER @ NYVEXA</text>
 
-  <!-- mini wired-node cluster (right) -->
-  <g class="f1" transform="translate(690,150)" stroke="#3A2E48" stroke-width="1">
-    <line x1="40" y1="20" x2="90" y2="0"/><line x1="40" y1="20" x2="95" y2="55"/>
-    <line x1="90" y1="0" x2="150" y2="30"/><line x1="95" y1="55" x2="150" y2="30"/>
-    <line x1="40" y1="20" x2="30" y2="80"/><line x1="30" y1="80" x2="95" y2="55"/>
-    <line x1="150" y1="30" x2="140" y2="90"/><line x1="95" y1="55" x2="140" y2="90"/>
-  </g>
-  <g class="f1" transform="translate(690,150)" fill="#050507" stroke="#A855F7" stroke-width="1.4">
-    <circle cx="40" cy="20" r="4"><animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="90" cy="0" r="3"/><circle cx="150" cy="30" r="4"><animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="95" cy="55" r="5"><animate attributeName="r" values="5;7;5" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="30" cy="80" r="3"/><circle cx="140" cy="90" r="3"/>
+  <!-- ==================== RIGHT: ROBOT ==================== -->
+  <!-- rotating holographic rings (behind) -->
+  <g transform="translate(700,206)" opacity="0.7">
+    <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="34s" repeatCount="indefinite"/>
+      <ellipse rx="150" ry="150" stroke="#2A2233" stroke-width="1" stroke-dasharray="3 9"/>
+    </g>
+    <g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="26s" repeatCount="indefinite"/>
+      <ellipse rx="128" ry="128" stroke="#3A2E52" stroke-width="1" stroke-dasharray="60 260"/>
+    </g>
   </g>
 
-  <rect x="40" y="58" width="360" height="2" rx="1" fill="url(#acc)"><animate attributeName="width" values="0;360" dur="1.4s" fill="freeze"/></rect>
+  <!-- floating holo tags (minimal, uncongested) -->
+  <g class="hp"><rect x="812" y="120" width="60" height="22" rx="5" fill="#0A0710" stroke="#3A2E52"/><text x="842" y="135" text-anchor="middle" class="holo">LLM</text></g>
+  <g class="hp" style="animation-delay:1.2s"><rect x="540" y="150" width="76" height="22" rx="5" fill="#0A0710" stroke="#3A2E52"/><text x="578" y="165" text-anchor="middle" class="holo">AGENTS</text></g>
+  <g class="hp" style="animation-delay:2.1s"><rect x="828" y="286" width="60" height="22" rx="5" fill="#0A0710" stroke="#3A2E52"/><text x="858" y="301" text-anchor="middle" class="holo">RAG</text></g>
+  <!-- data streams from robot to tags -->
+  <g class="stream" stroke="#7C3AED" stroke-width="1.1" opacity="0.75">
+    <path d="M742 176 L812 131"/><path d="M660 176 L616 161"/><path d="M744 236 L828 297"/>
+  </g>
 
-  <text x="40" y="128" class="name" fill="url(#name)">REHAN NAZIR</text>
-  <text x="42" y="162" class="role">AI PRODUCTION SYSTEMS ENGINEER</text>
+  <!-- BREATHING GROUP -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3.5; 0 0" dur="4.5s" repeatCount="indefinite" additive="sum"/>
 
-  <!-- student + company line -->
-  <circle cx="46" cy="188" r="3" fill="#A855F7"/>
-  <text x="58" y="192" class="meta">3rd-YEAR DATA SCIENCE STUDENT</text>
-  <circle cx="330" cy="188" r="3" fill="#A855F7"/>
-  <text x="342" y="192" class="meta">FOUNDER @ NYVEXA</text>
+    <!-- legs -->
+    <g fill="url(#metal)" class="edge">
+      <path d="M676 300 h16 l-2 60 h-14 Z"/><path d="M708 300 h16 l2 60 h-14 Z"/>
+      <rect x="670" y="358" width="26" height="12" rx="4"/><rect x="704" y="358" width="26" height="12" rx="4"/>
+    </g>
+    <!-- pelvis -->
+    <path d="M672 272 h56 l-8 30 h-40 Z" fill="url(#metalV)" class="edge"/>
 
-  <!-- typewriter tagline -->
-  <text x="42" y="248" class="tag dim">&gt;</text>
-  <g clip-path="url(#type)"><text x="118" y="248" class="tag">building autonomous AI systems in production</text></g>
-  <rect class="cursor" x="118" y="232" width="9" height="18" fill="#A855F7"><animate attributeName="x" values="118;118;542;542;118" keyTimes="0;0.06;0.46;0.86;1" dur="7.5s" repeatCount="indefinite"/></rect>
+    <!-- arms -->
+    <g fill="url(#metal)" class="edge">
+      <path d="M636 176 q-10 2 -12 14 l-4 60 q0 8 8 9 q9 1 10 -8 l6 -62 Z"/>
+      <rect x="620" y="256" width="22" height="20" rx="7"/>
+      <path d="M764 176 q10 2 12 14 l4 60 q0 8 -8 9 q-9 1 -10 -8 l-6 -62 Z"/>
+      <rect x="758" y="256" width="22" height="20" rx="7"/>
+    </g>
 
-  <!-- minimal chips -->
-  <g transform="translate(42,272)">
-    <g><rect width="118" height="28" rx="6" fill="#080609" stroke="#241D2E"/><circle cx="16" cy="14" r="3" fill="#A855F7"/><text x="28" y="18" class="meta">AI Agents</text></g>
-    <g transform="translate(130,0)"><rect width="118" height="28" rx="6" fill="#080609" stroke="#241D2E"/><circle cx="16" cy="14" r="3" fill="#A855F7"/><text x="28" y="18" class="meta">LangGraph</text></g>
-    <g transform="translate(260,0)"><rect width="80" height="28" rx="6" fill="#080609" stroke="#241D2E"/><circle cx="16" cy="14" r="3" fill="#A855F7"/><text x="28" y="18" class="meta">RAG</text></g>
-    <g transform="translate(350,0)"><rect width="118" height="28" rx="6" fill="#080609" stroke="#241D2E"/><circle cx="16" cy="14" r="3" fill="#A855F7"/><text x="28" y="18" class="meta">FastAPI</text></g>
+    <!-- torso -->
+    <path d="M660 150 q40 -16 80 0 l8 66 q-48 22 -96 0 Z" fill="url(#metalV)" class="edge"/>
+    <path d="M700 150 V216" class="panelln"/>
+    <path d="M672 164 h56 M676 184 h48" class="panelln"/>
+    <!-- shoulders -->
+    <ellipse cx="654" cy="156" rx="18" ry="14" fill="url(#metal)" class="edge"/>
+    <ellipse cx="746" cy="156" rx="18" ry="14" fill="url(#metal)" class="edge"/>
+
+    <!-- chest core -->
+    <circle cx="700" cy="186" r="22" fill="url(#coreG)">
+      <animate attributeName="r" values="18;24;18" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="186" r="6" fill="#F3E8FF"/>
+    <circle cx="700" cy="186" r="6" fill="none" stroke="#C084FC">
+      <animate attributeName="r" values="6;22;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- neck -->
+    <rect x="690" y="128" width="20" height="16" rx="4" fill="url(#metalV)" class="edge"/>
+
+    <!-- HEAD (subtle servo rotation) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-1.5 700 100; 1.5 700 100; -1.5 700 100" dur="7s" repeatCount="indefinite" additive="sum"/>
+      <!-- helmet -->
+      <rect x="675" y="68" width="50" height="60" rx="19" fill="url(#metal)" class="edgeHi"/>
+      <path d="M683 74 q17 -8 34 0" stroke="#8B5CF6" stroke-width="1" opacity="0.6" fill="none"/>
+      <!-- antenna -->
+      <line x1="700" y1="68" x2="700" y2="54" stroke="#5B3D82" stroke-width="1.2"/>
+      <circle cx="700" cy="51" r="2.5" fill="#C084FC"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle>
+      <!-- side servo units -->
+      <rect x="669" y="90" width="7" height="20" rx="3" fill="url(#metal)" class="edge"/>
+      <rect x="724" y="90" width="7" height="20" rx="3" fill="url(#metal)" class="edge"/>
+      <!-- visor: dark band + glow + horizontal scan line + sweeping scanner -->
+      <ellipse cx="700" cy="98" rx="26" ry="15" fill="url(#visorG)" opacity="0.55"/>
+      <rect x="681" y="90" width="38" height="17" rx="8" fill="#080810" stroke="#3A2E52" stroke-width="0.8"/>
+      <rect x="685" y="98" width="30" height="1.6" rx="0.8" fill="#7C3AED" opacity="0.7"/>
+      <rect x="686" y="93" width="5" height="11" rx="2.5" fill="#E9D5FF">
+        <animate attributeName="x" values="686;709;686" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.7;1" dur="3.4s" repeatCount="indefinite"/>
+      </rect>
+      <!-- chin vents -->
+      <path d="M692 116 h16 M694 121 h12" stroke="#2A2233" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- floating particles -->
+  <g fill="#A855F7">
+    <circle class="p1" cx="560" cy="240" r="2"/>
+    <circle class="p2" cx="620" cy="300" r="1.6"/>
+    <circle class="p3" cx="840" cy="230" r="2"/>
+    <circle class="p4" cx="800" cy="330" r="1.6"/>
+    <circle class="p2" cx="880" cy="180" r="1.6"/>
   </g>
 </svg>
