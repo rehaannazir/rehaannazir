@@ -61,12 +61,25 @@
     <circle class="tw1" cx="480" cy="720" r="1.4"/><circle class="tw2" cx="1500" cy="740" r="1.4"/>
   </g>
 
-  <!-- ghost memories of the journey · far layer -->
-  <g filter="url(#blurFar)" opacity="0.14" stroke="#8F87AC" stroke-width="2" fill="none">
-    <g class="ghost"><path d="M180 220 C 176 204 148 202 144 218 C 128 220 124 240 138 246 C 132 260 148 272 162 264 C 172 274 190 268 190 254 C 204 250 202 228 188 226 C 190 216 184 212 180 220 Z"/></g>
-    <g class="ghost" style="animation-delay:-4s"><path d="M1690 190 v70 a44 12 0 0 0 88 0 v-70 a44 12 0 0 0 -88 0 a44 12 0 0 0 88 0"/></g>
-    <g class="ghost" style="animation-delay:-7s"><rect x="150" y="560" width="44" height="42" rx="14"/><path d="M150 572 L138 560 M194 572 L206 560"/></g>
-    <g class="ghost" style="animation-delay:-9s"><path d="M1660 600 h56 M1660 616 h44 M1660 632 h56"/></g>
+  <!-- ghost memories of the journey · far layer, each glowing softly in its chapter color -->
+  <g filter="url(#blurFar)" fill="none">
+    <g class="ghost" opacity="0.25">
+      <ellipse cx="167" cy="238" rx="54" ry="46" fill="#EC7BC8" opacity="0.12"/>
+      <path d="M180 220 C 176 204 148 202 144 218 C 128 220 124 240 138 246 C 132 260 148 272 162 264 C 172 274 190 268 190 254 C 204 250 202 228 188 226 C 190 216 184 212 180 220 Z" stroke="#EC7BC8" stroke-width="2"/>
+    </g>
+    <g class="ghost" opacity="0.25" style="animation-delay:-4s">
+      <ellipse cx="1734" cy="225" rx="62" ry="54" fill="#22D3EE" opacity="0.1"/>
+      <path d="M1690 190 v70 a44 12 0 0 0 88 0 v-70 a44 12 0 0 0 -88 0 a44 12 0 0 0 88 0" stroke="#22D3EE" stroke-width="2"/>
+    </g>
+    <g class="ghost" opacity="0.25" style="animation-delay:-7s">
+      <ellipse cx="172" cy="581" rx="54" ry="46" fill="#A78BFA" opacity="0.12"/>
+      <rect x="150" y="560" width="44" height="42" rx="14" stroke="#A78BFA" stroke-width="2"/>
+      <path d="M150 572 L138 560 M194 572 L206 560" stroke="#A78BFA" stroke-width="2"/>
+    </g>
+    <g class="ghost" opacity="0.25" style="animation-delay:-9s">
+      <ellipse cx="1688" cy="616" rx="54" ry="42" fill="#34D399" opacity="0.1"/>
+      <path d="M1660 600 h56 M1660 616 h44 M1660 632 h56" stroke="#34D399" stroke-width="2"/>
+    </g>
   </g>
 
   <!-- ============ CONVERGENCE STREAMS · every color comes home ============ -->
