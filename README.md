@@ -23,7 +23,7 @@
 
 <br/>
 
-<img src="assets/brain.svg" alt="Neural circuit" width="100%" />
+<img src="assets/story.svg" alt="From request to production: how Rehan Nazir builds AI systems" width="100%" />
 
 </div>
 
