@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="900" height="24" fill="none" role="img" aria-label="divider">
   <defs>
     <linearGradient id="dv" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#B96BFF" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#A855F7" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <line x1="0" y1="12" x2="900" y2="12" stroke="url(#dv)" stroke-width="2"/>
-  <circle cx="0" cy="12" r="3" fill="#B96BFF">
-    <animate attributeName="cx" values="120;780;120" dur="6s" repeatCount="indefinite"/>
+  <line x1="0" y1="12" x2="900" y2="12" stroke="url(#dv)" stroke-width="1.5"/>
+  <circle cx="0" cy="12" r="2.5" fill="#C084FC">
+    <animate attributeName="cx" values="150;750;150" dur="6s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
   </circle>
 </svg>

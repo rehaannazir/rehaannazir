@@ -13,13 +13,17 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0A0A0F?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0F)](https://rehan-portfolio-eight.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-000000?style=for-the-badge&logo=vercel&logoColor=A855F7&labelColor=000000)](https://rehan-portfolio-eight.vercel.app/)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A0A0F?style=for-the-badge&logo=linkedin&logoColor=5B8CFF&labelColor=0A0A0F)](https://www.linkedin.com/in/rehan-nazir-530597332)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=A855F7&labelColor=000000)](https://www.linkedin.com/in/rehan-nazir-530597332)
 &nbsp;
-[![Email](https://img.shields.io/badge/EMAIL-0A0A0F?style=for-the-badge&logo=gmail&logoColor=B96BFF&labelColor=0A0A0F)](mailto:rehaan689nazir@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=A855F7&labelColor=000000)](mailto:rehaan689nazir@gmail.com)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GITHUB-0A0A0F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A0A0F)](https://github.com/rehaannazir)
+[![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=A855F7&labelColor=000000)](https://github.com/rehaannazir)
+
+<br/>
+
+<img src="assets/brain.svg" alt="Neural circuit" width="100%" />
 
 </div>
 
@@ -235,22 +239,22 @@ where new orchestration ideas get prototyped before they ship.
 
 <div align="center">
 
-![Views](https://komarev.com/ghpvc/?username=rehaannazir&style=for-the-badge&color=B96BFF&label=PROFILE+VIEWS)
+![Views](https://komarev.com/ghpvc/?username=rehaannazir&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS)
 &nbsp;
-![Followers](https://img.shields.io/github/followers/rehaannazir?style=for-the-badge&logo=github&color=5B8CFF&labelColor=0A0A0F&label=FOLLOWERS)
+![Followers](https://img.shields.io/github/followers/rehaannazir?style=for-the-badge&logo=github&color=A855F7&labelColor=000000&label=FOLLOWERS)
 
 <br/><br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=rehaannazir&show_icons=true&hide_border=true&bg_color=0A0A0F&title_color=B96BFF&icon_color=5B8CFF&text_color=C8C8DA&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rehaannazir&layout=compact&hide_border=true&bg_color=0A0A0F&title_color=B96BFF&text_color=C8C8DA&langs_count=8" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=rehaannazir&show_icons=true&hide_border=true&bg_color=000000&title_color=A855F7&icon_color=A855F7&text_color=C9C4D4&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rehaannazir&layout=compact&hide_border=true&bg_color=000000&title_color=A855F7&text_color=C9C4D4&langs_count=8" />
 
 <br/><br/>
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rehaannazir&hide_border=true&background=0A0A0F&ring=B96BFF&fire=5B8CFF&currStreakNum=C8C8DA&sideNums=C8C8DA&currStreakLabel=B96BFF&sideLabels=8A8AA0&dates=5A5A72" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rehaannazir&hide_border=true&background=000000&ring=A855F7&fire=C084FC&currStreakNum=C9C4D4&sideNums=C9C4D4&currStreakLabel=A855F7&sideLabels=8A8698&dates=4A4458" />
 
 <br/><br/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=rehaannazir&bg_color=0A0A0F&color=C8C8DA&line=B96BFF&point=5B8CFF&area=true&hide_border=true" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=rehaannazir&bg_color=000000&color=C9C4D4&line=A855F7&point=C084FC&area=true&hide_border=true" />
 
 </div>
 
@@ -276,7 +280,7 @@ where new orchestration ideas get prototyped before they ship.
 
 - **Build in public.** Every system above ships with documentation and a clear architecture.
 - **Reusable primitives.** Structured-output, agent, and RAG patterns extracted for reuse.
-- **Goal.** Grow a set of production-grade AI building blocks under the **Nexara** banner.
+- **Goal.** Grow a set of production-grade AI building blocks under the **Nyvexa** banner.
 
 <img src="assets/divider.svg" width="100%" />
 
@@ -284,13 +288,13 @@ where new orchestration ideas get prototyped before they ship.
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-5B8CFF?style=flat-square&logo=vercel&logoColor=white)](https://rehan-portfolio-eight.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=A855F7)](https://rehan-portfolio-eight.vercel.app/)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rehan-nazir-530597332)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=A855F7)](https://www.linkedin.com/in/rehan-nazir-530597332)
 &nbsp;
-[![Email](https://img.shields.io/badge/Email-B96BFF?style=flat-square&logo=gmail&logoColor=white)](mailto:rehaan689nazir@gmail.com)
+[![Email](https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=A855F7)](mailto:rehaan689nazir@gmail.com)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/rehaannazir)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=A855F7)](https://github.com/rehaannazir)
 <!-- Calendly: add your booking link, then uncomment ↓
 &nbsp;
 [![Calendly](https://img.shields.io/badge/Book_a_call-22D3EE?style=flat-square&logo=calendly&logoColor=white)](https://calendly.com/YOUR-HANDLE)
