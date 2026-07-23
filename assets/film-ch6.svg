@@ -15,6 +15,57 @@
     <filter id="blurFar" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
     <filter id="blurFg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
 
+    <!-- humanoid dispatcher robot · talking, wandering eyes, antenna ears -->
+    <g id="bot6">
+      <path d="M-20 -12 Q-30 -4 -29 8 M20 -12 Q30 -4 29 8" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <rect x="-20" y="-20" width="40" height="34" rx="11" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="0" cy="-4" r="6" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+      <circle class="core" cx="0" cy="-4" r="2.4" fill="#F4F1FB"/>
+      <rect x="-5" y="-26" width="10" height="7" rx="3" fill="#0C0B12" stroke="currentColor" stroke-width="1.4"/>
+      <rect x="-17" y="-58" width="34" height="33" rx="12" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="-12" y="-53" width="24" height="23" rx="8" fill="#12101A"/>
+      <path d="M-17 -48 L-25 -56 M17 -48 L25 -56" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle class="tip" cx="-25" cy="-56" r="2.3" fill="currentColor"/><circle class="tip" cx="25" cy="-56" r="2.3" fill="currentColor"/>
+      <circle cx="-7" cy="-44" r="4" fill="#08070C"/><circle cx="7" cy="-44" r="4" fill="#08070C"/>
+      <circle cy="-44" r="2.4" fill="#EDE9F8"><animate attributeName="cx" values="-9;-5;-9" dur="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0.1;1" keyTimes="0;0.9;0.94;1" dur="4.3s" repeatCount="indefinite"/></circle>
+      <circle cy="-44" r="2.4" fill="#EDE9F8"><animate attributeName="cx" values="5;9;5" dur="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0.1;1" keyTimes="0;0.9;0.94;1" dur="4.3s" repeatCount="indefinite"/></circle>
+      <rect class="mouth" x="-5.5" y="-34" width="11" height="3" rx="1.5" fill="#CFC6EE"/>
+    </g>
+
+    <!-- hand-drawn tool marks in signature colors -->
+    <g id="lgSlack">
+      <rect x="-2" y="-11" width="5" height="10" rx="2.5" fill="#36C5F0"/>
+      <rect x="1" y="-3" width="10" height="5" rx="2.5" fill="#2EB67D"/>
+      <rect x="-3" y="1" width="5" height="10" rx="2.5" fill="#ECB22E"/>
+      <rect x="-11" y="-2" width="10" height="5" rx="2.5" fill="#E01E5A"/>
+    </g>
+    <g id="lgGmail">
+      <rect x="-10" y="-7.5" width="20" height="15" rx="2" fill="#FBF7F4"/>
+      <path d="M-10 -6 L0 2 L10 -6" stroke="#EA4335" stroke-width="2.6" fill="none" stroke-linejoin="round"/>
+      <rect x="-10" y="-7.5" width="2.6" height="15" rx="1.3" fill="#4285F4"/>
+      <rect x="7.4" y="-7.5" width="2.6" height="15" rx="1.3" fill="#34A853"/>
+    </g>
+    <g id="lgGithub">
+      <circle r="10" fill="#F0F6FC"/>
+      <path d="M-6.5 1 q0 -4 2.6 -5.8 l-0.7 -3.4 2.8 1.8 q1.8 -0.5 3.6 0 l2.8 -1.8 -0.7 3.4 q2.6 1.8 2.6 5.8 q0 4.6 -6.5 4.6 q-6.5 0 -6.5 -4.6 Z" fill="#0D1117"/>
+      <circle cx="-2.6" cy="0" r="1" fill="#F0F6FC"/><circle cx="2.6" cy="0" r="1" fill="#F0F6FC"/>
+    </g>
+    <g id="lgStripe">
+      <rect x="-10" y="-10" width="20" height="20" rx="5" fill="#635BFF"/>
+      <text y="4.5" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">S</text>
+    </g>
+    <g id="lgSheets">
+      <rect x="-8" y="-10" width="16" height="20" rx="2.5" fill="#188038"/>
+      <rect x="-5" y="-3" width="10" height="9" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+      <path d="M-5 0 h10 M-5 3 h10 M-1.6 -3 v9" stroke="#FFFFFF" stroke-width="1.1"/>
+    </g>
+    <g id="lgCrm">
+      <rect x="-10" y="-8" width="20" height="16" rx="3" fill="#0E1626" stroke="#60A5FA" stroke-width="1.4"/>
+      <circle cx="-4.5" cy="-2" r="2.4" fill="#60A5FA"/>
+      <path d="M-8 5 q3.5 -4.5 7 0" fill="#60A5FA"/>
+      <path d="M2 -3 h6 M2 1 h6 M2 5 h4" stroke="#93C5FD" stroke-width="1.4"/>
+    </g>
+
     <style>
       .cap{font:600 21px ui-monospace,Consolas,monospace;fill:#F1EDFB;letter-spacing:5px}
       .slate{font:600 11px ui-monospace,Consolas,monospace;fill:#A29BC0;letter-spacing:4px}
@@ -31,6 +82,13 @@
 
       @keyframes hubB{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
       .hub{transform-origin:760px 400px;animation:hubB 2.8s ease-in-out infinite}
+
+      /* robot life */
+      .mouth{transform-box:fill-box;transform-origin:center;animation:talk 0.5s ease-in-out infinite alternate}
+      @keyframes talk{from{transform:scaleY(0.45)}to{transform:scaleY(1.8)}}
+      @keyframes corePulse{0%,100%{opacity:1}50%{opacity:0.35}}
+      .core{animation:corePulse 2.4s ease-in-out infinite}
+      .tip{animation:corePulse 1.7s ease-in-out infinite}
 
       @keyframes tw{0%,100%{opacity:0.14}50%{opacity:0.6}}
       .tw1{animation:tw 3.6s ease-in-out infinite}
@@ -69,18 +127,19 @@
       <circle class="tw2" cx="900" cy="700" r="1.4"/>
     </g>
 
-    <!-- ============ INGRESS · from the agents ============ -->
-    <circle cx="170" cy="400" r="56" fill="url(#inGlow)"/>
-    <circle cx="170" cy="400" r="8" fill="#F3EEFF"/>
-    <circle cx="170" cy="400" r="9" fill="none" stroke="#C4B5FD"><animate attributeName="r" values="9;40;9" dur="2.25s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0;0.8" dur="2.25s" repeatCount="indefinite"/></circle>
-    <text x="170" y="470" text-anchor="middle" class="plbl">FROM AGENTS · TRIGGERS</text>
+    <!-- ============ INGRESS · the dispatcher robot ============ -->
+    <circle cx="170" cy="396" r="64" fill="url(#inGlow)"/>
+    <ellipse cx="170" cy="450" rx="34" ry="6" fill="#0A0810"/>
+    <use href="#bot6" color="#A78BFA" transform="translate(170,438)"/>
+    <circle cx="170" cy="400" r="12" fill="none" stroke="#C4B5FD"><animate attributeName="r" values="12;48;12" dur="2.25s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="2.25s" repeatCount="indefinite"/></circle>
+    <text x="170" y="478" text-anchor="middle" class="plbl">FROM AGENTS · TRIGGERS</text>
 
     <!-- feed to the engine -->
-    <line x1="190" y1="400" x2="700" y2="400" class="rail"/>
-    <line x1="190" y1="400" x2="700" y2="400" class="railFlow"/>
+    <line x1="212" y1="400" x2="700" y2="400" class="rail"/>
+    <line x1="212" y1="400" x2="700" y2="400" class="railFlow"/>
     <g fill="#A78BFA">
-      <circle r="3.5"><animateMotion dur="1.5s" begin="0s" repeatCount="indefinite" path="M190 400 H700"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.12;0.85;1" dur="1.5s" begin="0s" repeatCount="indefinite"/></circle>
-      <circle r="3.5"><animateMotion dur="1.5s" begin="-0.75s" repeatCount="indefinite" path="M190 400 H700"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.12;0.85;1" dur="1.5s" begin="-0.75s" repeatCount="indefinite"/></circle>
+      <circle r="3.5"><animateMotion dur="1.5s" begin="0s" repeatCount="indefinite" path="M212 400 H700"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.12;0.85;1" dur="1.5s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle r="3.5"><animateMotion dur="1.5s" begin="-0.75s" repeatCount="indefinite" path="M212 400 H700"/><animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.12;0.85;1" dur="1.5s" begin="-0.75s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- ============ THE AUTOMATION ENGINE ============ -->
@@ -109,14 +168,14 @@
       <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4.5s" begin="-3.75s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 415 1240 650 1500 650"/><animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.08;0.9;1" dur="4.5s" begin="-3.75s" repeatCount="indefinite"/></rect>
     </g>
 
-    <!-- ============ TOOL STATIONS ============ -->
+    <!-- ============ TOOL STATIONS · real marks in signature colors ============ -->
     <g>
-      <rect x="1500" y="133" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="155" text-anchor="middle" class="stn">SLACK</text>
-      <rect x="1500" y="233" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="255" text-anchor="middle" class="stn">GMAIL</text>
-      <rect x="1500" y="333" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="355" text-anchor="middle" class="stn">GITHUB</text>
-      <rect x="1500" y="433" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="455" text-anchor="middle" class="stn">STRIPE</text>
-      <rect x="1500" y="533" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="555" text-anchor="middle" class="stn">SHEETS</text>
-      <rect x="1500" y="633" width="130" height="34" rx="9" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><text x="1565" y="655" text-anchor="middle" class="stn">CRM</text>
+      <rect x="1500" y="130" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgSlack" transform="translate(1524,150)"/><text x="1596" y="154" text-anchor="middle" class="stn">SLACK</text>
+      <rect x="1500" y="230" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgGmail" transform="translate(1524,250)"/><text x="1596" y="254" text-anchor="middle" class="stn">GMAIL</text>
+      <rect x="1500" y="330" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgGithub" transform="translate(1524,350)"/><text x="1596" y="354" text-anchor="middle" class="stn">GITHUB</text>
+      <rect x="1500" y="430" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgStripe" transform="translate(1524,450)"/><text x="1596" y="454" text-anchor="middle" class="stn">STRIPE</text>
+      <rect x="1500" y="530" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgSheets" transform="translate(1524,550)"/><text x="1596" y="554" text-anchor="middle" class="stn">SHEETS</text>
+      <rect x="1500" y="630" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgCrm" transform="translate(1524,650)"/><text x="1596" y="654" text-anchor="middle" class="stn">CRM</text>
     </g>
 
     <!-- dock confirmations · green -->

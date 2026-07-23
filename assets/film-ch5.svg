@@ -12,16 +12,35 @@
     <filter id="blurMid" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.6"/></filter>
     <filter id="blurFg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
 
-    <!-- one agent workstation: desk console + robot avatar -->
-    <g id="pod">
+    <!-- desk console -->
+    <g id="desk">
       <rect x="-75" y="0" width="150" height="60" rx="10" fill="#0A090F" stroke="#262138" stroke-width="1.6"/>
       <rect class="t1" x="-58" y="14" width="70" height="4" rx="2" fill="#3A3450"/>
       <rect class="t2" x="-58" y="27" width="96" height="4" rx="2" fill="#332E48"/>
       <rect class="t3" x="-58" y="40" width="54" height="4" rx="2" fill="#3A3450"/>
-      <rect x="-16" y="-46" width="32" height="26" rx="10" fill="#0C0B12" stroke="#4A4462" stroke-width="1.6"/>
-      <rect x="-9" y="-37" width="18" height="6" rx="3" fill="#1A1030"/>
-      <circle cx="0" cy="-34" r="2" fill="#CFC6EE"><animate attributeName="cx" values="-6;6;-6" dur="3.4s" repeatCount="indefinite"/></circle>
     </g>
+    <!-- humanoid worker robot · waist-up behind the desk · body tint via currentColor -->
+    <g id="bot">
+      <path d="M-22 -12 Q-34 -6 -33 6" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M22 -12 Q34 -22 36 -30" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="36" cy="-30" r="4.5" fill="#0C0B12" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="-22" y="-20" width="44" height="30" rx="10" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="0" cy="-5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+      <circle class="core" cx="0" cy="-5" r="2.6" fill="#F4F1FB"/>
+      <rect x="-5" y="-26" width="10" height="7" rx="3" fill="#0C0B12" stroke="currentColor" stroke-width="1.4"/>
+      <rect x="-18" y="-58" width="36" height="34" rx="12" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="-13" y="-53" width="26" height="24" rx="8" fill="#12101A"/>
+      <path d="M-18 -48 L-26 -56 M18 -48 L26 -56" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle class="tip" cx="-26" cy="-56" r="2.4" fill="currentColor"/>
+      <circle class="tip" cx="26" cy="-56" r="2.4" fill="currentColor"/>
+      <circle cx="-8" cy="-44" r="4.4" fill="#08070C"/>
+      <circle cx="8" cy="-44" r="4.4" fill="#08070C"/>
+      <rect class="mouth" x="-6" y="-34" width="12" height="3" rx="1.5" fill="#CFC6EE"/>
+    </g>
+    <!-- hand tools -->
+    <g id="toolHammer"><rect x="-1.8" y="-3" width="3.6" height="20" rx="1.8" fill="#8F89A4"/><rect x="-8" y="-9" width="16" height="7" rx="2.5" fill="#B7B1C9"/></g>
+    <g id="toolWrench"><rect x="-1.8" y="-2" width="3.6" height="19" rx="1.8" fill="#8F89A4"/><circle cx="0" cy="-6" r="5" fill="none" stroke="#B7B1C9" stroke-width="3.4" stroke-dasharray="22 10"/></g>
+    <g id="toolScrew"><rect x="-1.2" y="-8" width="2.4" height="14" fill="#B7B1C9"/><rect x="-2.6" y="4" width="5.2" height="9" rx="2.4" fill="#8F89A4"/></g>
 
     <style>
       .cap{font:600 21px ui-monospace,Consolas,monospace;fill:#F1EDFB;letter-spacing:5px}
@@ -39,6 +58,15 @@
       .t1{animation:type 3.4s steps(14) infinite}
       .t2{animation:type 4.1s steps(18) infinite -1.2s}
       .t3{animation:type 3.7s steps(11) infinite -2.1s}
+
+      /* robot life */
+      .mouth{transform-box:fill-box;transform-origin:center;animation:talk 0.5s ease-in-out infinite alternate}
+      @keyframes talk{from{transform:scaleY(0.45)}to{transform:scaleY(1.8)}}
+      @keyframes corePulse{0%,100%{opacity:1}50%{opacity:0.35}}
+      .core{animation:corePulse 2.4s ease-in-out infinite}
+      .tip{animation:corePulse 1.7s ease-in-out infinite}
+      @keyframes swing{from{transform:rotate(-10deg)}to{transform:rotate(14deg)}}
+      .toolSwing{animation:swing 1.1s ease-in-out infinite alternate}
 
       /* task queue shrinking */
       @keyframes q2{0%,40%{opacity:1}46%,84%{opacity:0}90%,100%{opacity:1}}
@@ -112,23 +140,31 @@
     <!-- ============ BACK ROW · depth ============ -->
     <g filter="url(#blurMid)" opacity="0.8">
       <g transform="translate(460,300) scale(0.78)">
-        <use href="#pod"/>
-        <circle cx="30" cy="-40" r="4"><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.1s" repeatCount="indefinite"/></circle>
+        <use href="#bot" color="#FB923C"/>
+        <use href="#desk"/>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="-10;-6;-10" dur="3.5s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.1s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="6;10;6" dur="3.5s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.1s" repeatCount="indefinite"/></circle>
       </g>
       <text x="460" y="378" text-anchor="middle" class="anameB">FINANCE</text>
       <g transform="translate(860,300) scale(0.78)">
-        <use href="#pod"/>
-        <circle cx="30" cy="-40" r="4"><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.3s" begin="-2.2s" repeatCount="indefinite"/></circle>
+        <use href="#bot" color="#C084FC"/>
+        <use href="#desk"/>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="-10;-6;-10" dur="3.8s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.3s" begin="-2.2s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="6;10;6" dur="3.8s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.3s" begin="-2.2s" repeatCount="indefinite"/></circle>
       </g>
       <text x="860" y="378" text-anchor="middle" class="anameB">MARKETING</text>
       <g transform="translate(1260,300) scale(0.78)">
-        <use href="#pod"/>
-        <circle cx="30" cy="-40" r="4"><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.8s" repeatCount="indefinite"/></circle>
+        <use href="#bot" color="#2DD4BF"/>
+        <use href="#desk"/>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="-10;-6;-10" dur="3.3s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.8s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="6;10;6" dur="3.3s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.8s" repeatCount="indefinite"/></circle>
       </g>
       <text x="1260" y="378" text-anchor="middle" class="anameB">BROWSER</text>
       <g transform="translate(1660,300) scale(0.78)">
-        <use href="#pod"/>
-        <circle cx="30" cy="-40" r="4"><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.9s" begin="-5.1s" repeatCount="indefinite"/></circle>
+        <use href="#bot" color="#818CF8"/>
+        <use href="#desk"/>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="-10;-6;-10" dur="3.6s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.9s" begin="-5.1s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.8"><animate attributeName="cx" values="6;10;6" dur="3.6s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.9s" begin="-5.1s" repeatCount="indefinite"/></circle>
       </g>
       <text x="1660" y="378" text-anchor="middle" class="anameB">DATA</text>
     </g>
@@ -140,30 +176,42 @@
 
     <!-- ============ FRONT ROW · the working floor ============ -->
     <g transform="translate(330,510)">
-      <use href="#pod"/>
-      <circle r="4.5" fill="#60A5FA"><animateMotion dur="5s" repeatCount="indefinite" path="M26 -33 A 26 18 0 1 1 -26 -33 A 26 18 0 1 1 26 -33"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.3s" repeatCount="indefinite"/></circle>
-      <g fill="#6E6890"><circle cx="36" cy="-30" r="2.5"/><circle class="qd2 qa" cx="36" cy="-21" r="2.5"/><circle class="qd3 qa" cx="36" cy="-12" r="2.5"/></g>
+      <use href="#bot" color="#A78BFA"/>
+      <g transform="translate(36,-30)"><g class="toolSwing"><use href="#toolHammer"/></g></g>
+      <use href="#desk"/>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.4s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.3s" repeatCount="indefinite"/></circle>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.4s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.3s" repeatCount="indefinite"/></circle>
+      <g fill="#6E6890"><circle cx="-46" cy="-32" r="2.5"/><circle class="qd2 qa" cx="-46" cy="-23" r="2.5"/><circle class="qd3 qa" cx="-46" cy="-14" r="2.5"/></g>
     </g>
     <text x="330" y="608" text-anchor="middle" class="aname">CODING</text>
 
     <g transform="translate(730,510)">
-      <use href="#pod"/>
-      <circle r="4.5" fill="#60A5FA"><animateMotion dur="5.6s" begin="-1.3s" repeatCount="indefinite" path="M26 -33 A 26 18 0 1 1 -26 -33 A 26 18 0 1 1 26 -33"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/></circle>
-      <g fill="#6E6890"><circle cx="36" cy="-30" r="2.5"/><circle class="qd2 qb" cx="36" cy="-21" r="2.5"/><circle class="qd3 qb" cx="36" cy="-12" r="2.5"/></g>
+      <use href="#bot" color="#22D3EE"/>
+      <g transform="translate(36,-30)"><g class="toolSwing"><use href="#toolWrench"/></g></g>
+      <use href="#desk"/>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.7s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/></circle>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.7s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/></circle>
+      <g fill="#6E6890"><circle cx="-46" cy="-32" r="2.5"/><circle class="qd2 qb" cx="-46" cy="-23" r="2.5"/><circle class="qd3 qb" cx="-46" cy="-14" r="2.5"/></g>
     </g>
     <text x="730" y="608" text-anchor="middle" class="aname">RESEARCH</text>
 
     <g transform="translate(1130,510)">
-      <use href="#pod"/>
-      <circle r="4.5" fill="#60A5FA"><animateMotion dur="5.3s" begin="-2.6s" repeatCount="indefinite" path="M26 -33 A 26 18 0 1 1 -26 -33 A 26 18 0 1 1 26 -33"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.1s" repeatCount="indefinite"/></circle>
-      <g fill="#6E6890"><circle cx="36" cy="-30" r="2.5"/><circle class="qd2 qc" cx="36" cy="-21" r="2.5"/><circle class="qd3 qc" cx="36" cy="-12" r="2.5"/></g>
+      <use href="#bot" color="#60A5FA"/>
+      <g transform="translate(36,-30)"><g class="toolSwing"><use href="#toolScrew"/></g></g>
+      <use href="#desk"/>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.2s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.1s" repeatCount="indefinite"/></circle>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.2s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="6.7s" begin="-3.1s" repeatCount="indefinite"/></circle>
+      <g fill="#6E6890"><circle cx="-46" cy="-32" r="2.5"/><circle class="qd2 qc" cx="-46" cy="-23" r="2.5"/><circle class="qd3 qc" cx="-46" cy="-14" r="2.5"/></g>
     </g>
     <text x="1130" y="608" text-anchor="middle" class="aname">SALES</text>
 
     <g transform="translate(1530,510)">
-      <use href="#pod"/>
-      <circle r="4.5" fill="#60A5FA"><animateMotion dur="5.9s" begin="-3.9s" repeatCount="indefinite" path="M26 -33 A 26 18 0 1 1 -26 -33 A 26 18 0 1 1 26 -33"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.6s" begin="-4.9s" repeatCount="indefinite"/></circle>
-      <g fill="#6E6890"><circle cx="36" cy="-30" r="2.5"/><circle class="qd2 qe" cx="36" cy="-21" r="2.5"/><circle class="qd3 qe" cx="36" cy="-12" r="2.5"/></g>
+      <use href="#bot" color="#34D399"/>
+      <g transform="translate(36,-30)"><g class="toolSwing"><use href="#toolHammer"/></g></g>
+      <use href="#desk"/>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.9s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.6s" begin="-4.9s" repeatCount="indefinite"/></circle>
+      <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.9s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;0.3;0.36;0.68;0.74;0.94;1" dur="7.6s" begin="-4.9s" repeatCount="indefinite"/></circle>
+      <g fill="#6E6890"><circle cx="-46" cy="-32" r="2.5"/><circle class="qd2 qe" cx="-46" cy="-23" r="2.5"/><circle class="qd3 qe" cx="-46" cy="-14" r="2.5"/></g>
     </g>
     <text x="1530" y="608" text-anchor="middle" class="aname">SUPPORT</text>
 
