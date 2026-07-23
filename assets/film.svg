@@ -1,0 +1,469 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" width="1920" height="800" fill="none" role="img" aria-label="The System — a cinematic journey through the AI systems Rehan Nazir builds, from request to production">
+  <defs>
+    <!-- ===== atmosphere ===== -->
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.72"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <radialGradient id="fV" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4C3B7A" stop-opacity="0.07"/><stop offset="1" stop-color="#4C3B7A" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1C3A6E" stop-opacity="0.06"/><stop offset="1" stop-color="#1C3A6E" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fC" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#155E6B" stop-opacity="0.07"/><stop offset="1" stop-color="#155E6B" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fO" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#7A4520" stop-opacity="0.06"/><stop offset="1" stop-color="#7A4520" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#14532D" stop-opacity="0.07"/><stop offset="1" stop-color="#14532D" stop-opacity="0"/></radialGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.03"/></feComponentTransfer></filter>
+    <filter id="bF" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+
+    <!-- ===== glows ===== -->
+    <radialGradient id="gPulse" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9DFFF" stop-opacity="0.95"/><stop offset="0.28" stop-color="#8B5CF6" stop-opacity="0.5"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gCore" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F3EEFF" stop-opacity="0.9"/><stop offset="0.3" stop-color="#A78BFA" stop-opacity="0.5"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gCyan" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2FB8CE" stop-opacity="0.18"/><stop offset="1" stop-color="#2FB8CE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gOr" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFD0A8" stop-opacity="0.55"/><stop offset="0.45" stop-color="#FB923C" stop-opacity="0.22"/><stop offset="1" stop-color="#FB923C" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gGrn" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6EE7B7" stop-opacity="0.7"/><stop offset="0.5" stop-color="#34D399" stop-opacity="0.25"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gVio" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C4B5FD" stop-opacity="0.7"/><stop offset="0.45" stop-color="#8B5CF6" stop-opacity="0.28"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gDock" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2496ED" stop-opacity="0.4"/><stop offset="1" stop-color="#2496ED" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gCl" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFC9AE" stop-opacity="0.75"/><stop offset="1" stop-color="#D97757" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gGp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9FF2D9" stop-opacity="0.75"/><stop offset="1" stop-color="#10A37F" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gGe" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#B8D4FF" stop-opacity="0.75"/><stop offset="1" stop-color="#4E8DF5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9BD9F2" stop-opacity="0"/><stop offset="0.5" stop-color="#D6F2FF" stop-opacity="0.9"/><stop offset="1" stop-color="#9BD9F2" stop-opacity="0"/></linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FE3F2" stop-opacity="0"/><stop offset="0.5" stop-color="#C9F6FF" stop-opacity="0.9"/><stop offset="1" stop-color="#7FE3F2" stop-opacity="0"/></linearGradient>
+    <linearGradient id="nameG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FAF8FC"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+    <radialGradient id="iVo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F0A868" stop-opacity="0.45"/><stop offset="1" stop-color="#F0A868" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iTx" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C4B5FD" stop-opacity="0.45"/><stop offset="1" stop-color="#C4B5FD" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iIm" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4ADE80" stop-opacity="0.45"/><stop offset="1" stop-color="#4ADE80" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iDo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iAp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#A78BFA" stop-opacity="0.45"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="iEm" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F87171" stop-opacity="0.45"/><stop offset="1" stop-color="#F87171" stop-opacity="0"/></radialGradient>
+
+    <!-- ===== input glyphs ===== -->
+    <g id="icVoice" stroke="currentColor" fill="none" stroke-linecap="round"><rect x="-4" y="-11" width="8" height="13" rx="4" stroke-width="1.8"/><path d="M-7.5 -1 a7.5 7.5 0 0 0 15 0" stroke-width="1.8"/><path d="M0 6.5 v4.5 M-4.5 11 h9" stroke-width="1.8"/></g>
+    <g id="icText" stroke="currentColor" fill="none" stroke-linejoin="round"><path d="M-11 -9 h22 v14 h-13 l-6 6 v-6 h-3 z" stroke-width="1.8"/><path d="M-6 -4 h12 M-6 0 h8" stroke-width="1.6"/></g>
+    <g id="icImage" stroke="currentColor" fill="none" stroke-linejoin="round"><rect x="-11" y="-9" width="22" height="18" rx="3" stroke-width="1.8"/><circle cx="-4.5" cy="-3.5" r="2.3" fill="currentColor" stroke="none"/><path d="M-10 7 L-3 0 L1 4 L5 1 L10 6" stroke-width="1.8"/></g>
+    <g id="icDocs" stroke="currentColor" fill="none" stroke-linejoin="round"><path d="M-8 -11 h11 l6 6 v16 h-17 z" stroke-width="1.8"/><path d="M3 -11 v6 h6" stroke-width="1.5"/><path d="M-4 1 h9 M-4 5 h9 M-4 9 h6" stroke-width="1.5"/></g>
+    <g id="icApi" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-4 -9 L-12 0 L-4 9" stroke-width="2"/><path d="M4 -9 L12 0 L4 9" stroke-width="2"/><path d="M1.5 -10 L-1.5 10" stroke-width="2"/></g>
+    <g id="icEmail" stroke="currentColor" fill="none" stroke-linejoin="round"><rect x="-12" y="-8" width="24" height="16" rx="2.5" stroke-width="1.8"/><path d="M-12 -6 L0 3 L12 -6" stroke-width="1.8"/></g>
+
+    <!-- ===== circuit brain ===== -->
+    <g id="brain">
+      <path d="M0 -26 C -8 -34 -24 -32 -28 -22 C -40 -20 -44 -6 -36 0 C -42 8 -36 20 -26 22 C -22 30 -8 32 0 26 C 8 32 22 30 26 22 C 36 20 42 8 36 0 C 44 -6 40 -20 28 -22 C 24 -32 8 -34 0 -26 Z" fill="#0A0F1E" fill-opacity="0.8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M0 -26 C 2 -12 -2 12 0 26" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5" fill="none"/>
+      <g stroke="currentColor" stroke-opacity="0.85" stroke-width="1.4" fill="none" stroke-linecap="round"><path d="M-20 -10 h8 v8"/><path d="M-24 8 h7"/><path d="M20 -12 v8 h-7"/><path d="M24 6 h-7 v7"/></g>
+      <g fill="currentColor"><circle cx="-12" cy="-2" r="1.9"/><circle cx="13" cy="-4" r="1.9"/><circle cx="-10" cy="14" r="1.9"/><circle cx="10" cy="-10" r="1.9"/></g>
+    </g>
+
+    <!-- ===== worker robot + desk ===== -->
+    <g id="desk"><rect x="-75" y="0" width="150" height="60" rx="10" fill="#0A090F" stroke="#262138" stroke-width="1.6"/><rect class="t1" x="-58" y="14" width="70" height="4" rx="2" fill="#3A3450"/><rect class="t2" x="-58" y="27" width="96" height="4" rx="2" fill="#332E48"/><rect class="t3" x="-58" y="40" width="54" height="4" rx="2" fill="#3A3450"/></g>
+    <g id="bot">
+      <path d="M-22 -12 Q-34 -6 -33 6" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M22 -12 Q34 -22 36 -30" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="36" cy="-30" r="4.5" fill="#0C0B12" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="-22" y="-20" width="44" height="30" rx="10" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="0" cy="-5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+      <circle class="core" cx="0" cy="-5" r="2.6" fill="#F4F1FB"/>
+      <rect x="-5" y="-26" width="10" height="7" rx="3" fill="#0C0B12" stroke="currentColor" stroke-width="1.4"/>
+      <rect x="-18" y="-58" width="36" height="34" rx="12" fill="#0C0B12" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="-13" y="-53" width="26" height="24" rx="8" fill="#12101A"/>
+      <path d="M-18 -48 L-26 -56 M18 -48 L26 -56" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle class="tip" cx="-26" cy="-56" r="2.4" fill="currentColor"/><circle class="tip" cx="26" cy="-56" r="2.4" fill="currentColor"/>
+      <circle cx="-8" cy="-44" r="4.4" fill="#08070C"/><circle cx="8" cy="-44" r="4.4" fill="#08070C"/>
+      <rect class="mouth" x="-6" y="-34" width="12" height="3" rx="1.5" fill="#CFC6EE"/>
+    </g>
+    <g id="hammer"><rect x="-1.8" y="-3" width="3.6" height="20" rx="1.8" fill="#8F89A4"/><rect x="-8" y="-9" width="16" height="7" rx="2.5" fill="#B7B1C9"/></g>
+    <g id="wrench"><rect x="-1.8" y="-2" width="3.6" height="19" rx="1.8" fill="#8F89A4"/><circle cx="0" cy="-6" r="5" fill="none" stroke="#B7B1C9" stroke-width="3.4" stroke-dasharray="22 10"/></g>
+
+    <!-- ===== docker whale ===== -->
+    <g id="docker">
+      <circle cy="-2" r="26" fill="url(#gDock)"/>
+      <g fill="#0A1520" stroke="#2496ED" stroke-width="1.2"><rect x="-15" y="-9" width="6" height="6"/><rect x="-8" y="-9" width="6" height="6"/><rect x="-1" y="-9" width="6" height="6"/><rect x="6" y="-9" width="6" height="6"/><rect x="-8" y="-16" width="6" height="6"/><rect x="-1" y="-16" width="6" height="6"/></g>
+      <path d="M-22 -1 H20 q7 0 5.5 5.5 q-3.5 11.5 -20.5 11.5 H-9 q-14 0 -17.5 -10.5 q-6.5 1.5 -9.5 -2.5 q3.5 -4 8.5 -3 z" fill="#0A1520" stroke="#2496ED" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+
+    <!-- ===== tool marks ===== -->
+    <g id="lgSlack"><rect x="-2" y="-11" width="5" height="10" rx="2.5" fill="#36C5F0"/><rect x="1" y="-3" width="10" height="5" rx="2.5" fill="#2EB67D"/><rect x="-3" y="1" width="5" height="10" rx="2.5" fill="#ECB22E"/><rect x="-11" y="-2" width="10" height="5" rx="2.5" fill="#E01E5A"/></g>
+    <g id="lgGmail"><rect x="-10" y="-7.5" width="20" height="15" rx="2" fill="#FBF7F4"/><path d="M-10 -6 L0 2 L10 -6" stroke="#EA4335" stroke-width="2.6" fill="none" stroke-linejoin="round"/><rect x="-10" y="-7.5" width="2.6" height="15" rx="1.3" fill="#4285F4"/><rect x="7.4" y="-7.5" width="2.6" height="15" rx="1.3" fill="#34A853"/></g>
+    <g id="lgGithub"><circle r="10" fill="#F0F6FC"/><path d="M-6.5 1 q0 -4 2.6 -5.8 l-0.7 -3.4 2.8 1.8 q1.8 -0.5 3.6 0 l2.8 -1.8 -0.7 3.4 q2.6 1.8 2.6 5.8 q0 4.6 -6.5 4.6 q-6.5 0 -6.5 -4.6 Z" fill="#0D1117"/><circle cx="-2.6" r="1" fill="#F0F6FC"/><circle cx="2.6" r="1" fill="#F0F6FC"/></g>
+    <g id="lgStripe"><rect x="-10" y="-10" width="20" height="20" rx="5" fill="#635BFF"/><text y="4.5" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#FFF">S</text></g>
+    <g id="lgSheets"><rect x="-8" y="-10" width="16" height="20" rx="2.5" fill="#188038"/><rect x="-5" y="-3" width="10" height="9" fill="none" stroke="#FFF" stroke-width="1.3"/><path d="M-5 0 h10 M-5 3 h10 M-1.6 -3 v9" stroke="#FFF" stroke-width="1.1"/></g>
+    <g id="lgCrm"><rect x="-10" y="-8" width="20" height="16" rx="3" fill="#0E1626" stroke="#60A5FA" stroke-width="1.4"/><circle cx="-4.5" cy="-2" r="2.4" fill="#60A5FA"/><path d="M-8 5 q3.5 -4.5 7 0" fill="#60A5FA"/><path d="M2 -3 h6 M2 1 h6" stroke="#93C5FD" stroke-width="1.4"/></g>
+
+    <style>
+      .cap{font:600 21px ui-monospace,Consolas,monospace;fill:#F1EDFB;letter-spacing:5px}
+      .slate{font:600 11px ui-monospace,Consolas,monospace;fill:#A29BC0;letter-spacing:4px}
+      .lb{font:600 11px ui-monospace,Consolas,monospace;fill:#DAD4EE;letter-spacing:2px}
+      .lbC{font:600 11px ui-monospace,Consolas,monospace;fill:#8FD4E4;letter-spacing:3px}
+      .lbB{font:600 11px ui-monospace,Consolas,monospace;fill:#9DB4E8;letter-spacing:3px}
+      .lbO{font:600 11px ui-monospace,Consolas,monospace;fill:#F0B98C;letter-spacing:3px}
+      .lbG{font:600 11px ui-monospace,Consolas,monospace;fill:#7FD8B0;letter-spacing:3px}
+      .lbV{font:600 11px ui-monospace,Consolas,monospace;fill:#C9B8F5;letter-spacing:3px}
+      .nm{font:600 12px ui-monospace,Consolas,monospace;fill:#D5CFE8;letter-spacing:3px}
+      .mn{font:700 13px ui-monospace,Consolas,monospace;fill:#DCE4F8;letter-spacing:3px}
+      .kN{font:800 26px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#EDE9F7}
+      .kS{font:600 10px ui-monospace,Consolas,monospace;fill:#5D5878;letter-spacing:2px}
+      .name{font:800 52px 'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:6px}
+      .role{font:700 19px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#C9C2DC;letter-spacing:8px}
+      .sb{font:600 14px ui-monospace,Consolas,monospace;fill:#8F87AC;letter-spacing:4px}
+
+      /* ===== THE CAMERA · one unbroken 36s dolly through 8 stages ===== */
+      @keyframes cam{
+        0%,8.6%{transform:translateX(0)}
+        12.5%,21.1%{transform:translateX(-1920px)}
+        25%,33.6%{transform:translateX(-3840px)}
+        37.5%,46.1%{transform:translateX(-5760px)}
+        50%,58.6%{transform:translateX(-7680px)}
+        62.5%,71.1%{transform:translateX(-9600px)}
+        75%,83.6%{transform:translateX(-11520px)}
+        87.5%,100%{transform:translateX(-13440px)}
+      }
+      .cam{animation:cam 36s cubic-bezier(0.66,0,0.34,1) infinite}
+      /* shutter hides the loop seam */
+      @keyframes shut{0%{opacity:1}3%{opacity:0}96%{opacity:0}100%{opacity:1}}
+      .shut{animation:shut 36s linear infinite}
+
+      /* captions */
+      @keyframes c0{0%,2%{opacity:0}4%,10%{opacity:1}12%,100%{opacity:0}}
+      @keyframes c1{0%,14.5%{opacity:0}16.5%,22.5%{opacity:1}24.5%,100%{opacity:0}}
+      @keyframes c2{0%,27%{opacity:0}29%,35%{opacity:1}37%,100%{opacity:0}}
+      @keyframes c3{0%,39.5%{opacity:0}41.5%,47.5%{opacity:1}49.5%,100%{opacity:0}}
+      @keyframes c4{0%,52%{opacity:0}54%,60%{opacity:1}62%,100%{opacity:0}}
+      @keyframes c5{0%,64.5%{opacity:0}66.5%,72.5%{opacity:1}74.5%,100%{opacity:0}}
+      @keyframes c6{0%,77%{opacity:0}79%,85%{opacity:1}87%,100%{opacity:0}}
+      .c0{animation:c0 36s linear infinite}.c1{animation:c1 36s linear infinite}
+      .c2{animation:c2 36s linear infinite}.c3{animation:c3 36s linear infinite}
+      .c4{animation:c4 36s linear infinite}.c5{animation:c5 36s linear infinite}
+      .c6{animation:c6 36s linear infinite}
+      /* finale titles */
+      @keyframes n1{0%,89%{opacity:0}91%,97%{opacity:1}99%,100%{opacity:0}}
+      @keyframes n2{0%,90.5%{opacity:0}92.5%,97%{opacity:1}99%,100%{opacity:0}}
+      @keyframes n3{0%,92%{opacity:0}94%,97%{opacity:1}99%,100%{opacity:0}}
+      @keyframes n4{0%,93.5%{opacity:0}95.5%,97%{opacity:1}99%,100%{opacity:0}}
+      .n1{animation:n1 36s linear infinite}.n2{animation:n2 36s linear infinite}
+      .n3{animation:n3 36s linear infinite}.n4{animation:n4 36s linear infinite}
+
+      /* ===== motion vocabulary ===== */
+      @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+      @keyframes talk{from{transform:scaleY(0.45)}to{transform:scaleY(1.8)}}
+      .mouth{transform-box:fill-box;transform-origin:center;animation:talk .5s ease-in-out infinite alternate}
+      @keyframes cp{0%,100%{opacity:1}50%{opacity:.35}}
+      .core{animation:cp 2.4s ease-in-out infinite}.tip{animation:cp 1.7s ease-in-out infinite}
+      @keyframes swing{from{transform:rotate(-10deg)}to{transform:rotate(14deg)}}
+      .sw{animation:swing 1.1s ease-in-out infinite alternate}
+      .t1,.t2,.t3{transform-box:fill-box;transform-origin:left center}
+      @keyframes type{0%{transform:scaleX(0)}42%,72%{transform:scaleX(1)}78%,100%{transform:scaleX(0)}}
+      .t1{animation:type 3.4s steps(14) infinite}.t2{animation:type 4.1s steps(18) infinite -1.2s}.t3{animation:type 3.7s steps(11) infinite -2.1s}
+      @keyframes flow{to{stroke-dashoffset:-26}}
+      .fl{stroke-dasharray:2 7;animation:flow 1.1s linear infinite}
+      @keyframes flowB{to{stroke-dashoffset:-84}}
+      .flB{stroke-dasharray:3 9;animation:flowB 1.6s linear infinite}
+      @keyframes tw{0%,100%{opacity:.14}50%{opacity:.6}}
+      .w1{animation:tw 3.6s ease-in-out infinite}.w2{animation:tw 4.9s ease-in-out infinite 1.1s}.w3{animation:tw 6.1s ease-in-out infinite 2.3s}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      .bob{animation:bob 7s ease-in-out infinite}.bob2{animation:bob 9s ease-in-out infinite -3s}
+      @keyframes jit{0%,100%{transform:translate(0,0)}25%{transform:translate(1.6px,-1px)}50%{transform:translate(-1.2px,1.2px)}75%{transform:translate(1px,.6px)}}
+      .jit{animation:jit .55s linear infinite}
+      @keyframes fall{0%{transform:translate(-100px,-40px);opacity:0}8%{opacity:1}42%{opacity:1}46%,100%{transform:translate(0,430px);opacity:0}}
+      .fa{animation:fall 4.4s cubic-bezier(.35,.1,.6,.9) infinite}
+      .d0{animation-delay:0s}.d1{animation-delay:-.73s}.d2{animation-delay:-1.46s}.d3{animation-delay:-2.2s}.d4{animation-delay:-2.93s}.d5{animation-delay:-3.66s}
+      @keyframes shard{0%{transform:translate(0,0) scale(.5);opacity:0}12%{opacity:.95;transform:translate(60px,8px) scale(1)}54%{opacity:.95}58%,100%{transform:translate(470px,96px) scale(.7);opacity:0}}
+      .sh{animation:shard 4s cubic-bezier(.4,.1,.6,.9) infinite}
+      .h0{animation-delay:0s}.h1{animation-delay:-1s}.h2{animation-delay:-2s}.h3{animation-delay:-3s}
+      @keyframes mindOn{0%{opacity:.18}4%{opacity:1}29%{opacity:1}36%,100%{opacity:.18}}
+      .m0{animation:mindOn 9s ease-in-out infinite}.m1{animation:mindOn 9s ease-in-out infinite -6s}.m2{animation:mindOn 9s ease-in-out infinite -3s}
+      @keyframes slide{0%{transform:translateX(0);opacity:0}8%{opacity:1}82%{opacity:1}90%,100%{transform:translateX(400px);opacity:0}}
+      .sl{animation:slide 3.6s cubic-bezier(.35,.1,.6,.9) infinite}
+      @keyframes ecg{to{stroke-dashoffset:-1520}}
+      .ecg{stroke-dasharray:90 1430;animation:ecg 5.5s linear infinite}
+      @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+      @keyframes spinR{from{transform:rotate(360deg)}to{transform:rotate(0)}}
+      @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-20px)}}
+      .dr{animation:drift 22s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <!-- ================= BACKDROP ================= -->
+  <rect width="1920" height="800" fill="#050505"/>
+
+  <!-- ================= THE WORLD · 8 stages ================= -->
+  <g class="cam">
+
+    <!-- ============ STAGE 0 · THE PROBLEM ============ -->
+    <g>
+      <ellipse cx="700" cy="300" rx="700" ry="340" fill="url(#fV)" class="dr"/>
+      <g fill="#6E67A0"><circle class="w1" cx="240" cy="150" r="1.6"/><circle class="w2" cx="820" cy="90" r="1.4"/><circle class="w3" cx="1460" cy="200" r="1.7"/><circle class="w1" cx="600" cy="660" r="1.5"/></g>
+      <!-- chaos of manual work -->
+      <g stroke="#232330" opacity="0.5" fill="none">
+        <g transform="translate(1500,250)"><circle r="120" stroke-width="5"/><path d="M0 0 L0 -95" stroke-width="6" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/></path></g>
+        <g transform="translate(1280,560) rotate(12)" class="jit"><rect width="80" height="102" rx="6" stroke-width="2.5"/><path d="M14 26 h52 M14 46 h52 M14 66 h34" stroke-width="2.5"/></g>
+        <g transform="translate(1650,520) rotate(-9)" class="jit" style="animation-delay:-.2s"><rect width="80" height="102" rx="6" stroke-width="2.5"/><path d="M14 26 h52 M14 46 h52 M14 66 h34" stroke-width="2.5"/></g>
+      </g>
+      <!-- the request ignites -->
+      <g class="bob">
+        <circle cx="700" cy="400" r="120" fill="url(#gPulse)" opacity="0.55"/>
+        <circle cx="700" cy="400" r="55" fill="url(#gPulse)" opacity="0.85"/>
+        <circle cx="700" cy="400" r="7.5" fill="#F4EEFF"><animate attributeName="r" values="7.5;9.6;8;9.2;7.5" keyTimes="0;.12;.2;.32;1" dur="2.6s" repeatCount="indefinite"/></circle>
+        <circle cx="700" cy="400" r="12" fill="none" stroke="#A78BFA" stroke-width="1.6"><animate attributeName="r" values="12;88" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".75;0" dur="2.6s" repeatCount="indefinite"/></circle>
+      </g>
+      <!-- BRIDGE → stage 1 -->
+      <path class="fl" d="M760 400 H2100" stroke="#3A2E52" stroke-width="1.5"/>
+    </g>
+
+    <!-- ============ STAGE 1 · UNDERSTANDING ============ -->
+    <g transform="translate(1920,0)">
+      <ellipse cx="1100" cy="300" rx="760" ry="340" fill="url(#fB)" class="dr"/>
+      <g fill="#8C86B8"><circle class="w2" cx="300" cy="180" r="1.7"/><circle class="w1" cx="1500" cy="120" r="1.6"/><circle class="w3" cx="1700" cy="640" r="1.6"/></g>
+      <!-- beam -->
+      <ellipse cx="960" cy="440" rx="640" ry="26" fill="url(#gCyan)"/>
+      <line x1="360" y1="440" x2="1560" y2="440" stroke="url(#beam)" stroke-width="2"/>
+      <text x="1560" y="418" text-anchor="end" class="lbB">INTENT DETECTION</text>
+      <!-- falling inputs -->
+      <g>
+        <g transform="translate(520,10)"><g class="fa d0"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#F0A868" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iVo)"/><use href="#icVoice" color="#F0A868"/><text x="22" y="5" class="lb">VOICE</text></g></g>
+        <g transform="translate(700,10)"><g class="fa d1"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#C4B5FD" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iTx)"/><use href="#icText" color="#C4B5FD"/><text x="22" y="5" class="lb">TEXT</text></g></g>
+        <g transform="translate(880,10)"><g class="fa d2"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#4ADE80" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iIm)"/><use href="#icImage" color="#4ADE80"/><text x="22" y="5" class="lb">IMAGE</text></g></g>
+        <g transform="translate(1060,10)"><g class="fa d3"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#22D3EE" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iDo)"/><use href="#icDocs" color="#22D3EE"/><text x="22" y="5" class="lb">DOCS</text></g></g>
+        <g transform="translate(1240,10)"><g class="fa d4"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#A78BFA" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iAp)"/><use href="#icApi" color="#A78BFA"/><text x="22" y="5" class="lb">API</text></g></g>
+        <g transform="translate(1420,10)"><g class="fa d5"><line x1="-6" y1="-6" x2="-30" y2="-110" stroke="#F87171" stroke-width="3" opacity=".45"/><circle r="22" fill="url(#iEm)"/><use href="#icEmail" color="#F87171"/><text x="22" y="5" class="lb">EMAIL</text></g></g>
+      </g>
+      <!-- structured threads converge -->
+      <g stroke="#3E6FB8" stroke-width="1.5" opacity=".3" stroke-dasharray="3 9"><path d="M520 440 L1620 620"/><path d="M700 440 L1620 620"/><path d="M880 440 L1620 620"/><path d="M1060 440 L1620 620"/><path d="M1240 440 L1620 620"/><path d="M1420 440 L1620 620"/></g>
+      <circle cx="1620" cy="620" r="42" fill="url(#gVio)" opacity=".55"/>
+      <circle cx="1620" cy="620" r="6.5" fill="#EAF2FF"/>
+      <text x="1600" y="678" text-anchor="end" class="lbB">CONTEXT</text>
+      <!-- BRIDGE → stage 2 -->
+      <path class="fl" d="M1620 620 C 1800 600 1900 520 2160 470" stroke="#3E6FB8" stroke-width="1.6"/>
+    </g>
+
+    <!-- ============ STAGE 2 · KNOWLEDGE ============ -->
+    <g transform="translate(3840,0)">
+      <ellipse cx="1150" cy="380" rx="800" ry="360" fill="url(#fC)" class="dr"/>
+      <!-- library -->
+      <g class="bob"><rect x="150" y="250" width="200" height="256" rx="14" fill="#050B0D" stroke="#1E5560" stroke-width="2.5"/><path d="M188 310 h124 M188 348 h124 M188 386 h92 M188 424 h124" stroke="#164750" stroke-width="3"/><text x="250" y="288" text-anchor="middle" class="lbC" font-size="12">PDF · SQL</text></g>
+      <g class="bob2" filter="url(#bF)" opacity=".7"><rect x="400" y="170" width="130" height="170" rx="10" fill="#04080A" stroke="#153A42" stroke-width="2.5"/><path d="M424 214 h82 M424 244 h82" stroke="#153A42" stroke-width="2.5"/></g>
+      <!-- chunks -->
+      <g stroke="#2E8A9C" fill="#07161B">
+        <g transform="translate(370,330)"><rect class="sh h0" x="-13" y="-9" width="26" height="18" rx="3" stroke-width="1.6"/></g>
+        <g transform="translate(370,380)"><rect class="sh h1" x="-13" y="-9" width="26" height="18" rx="3" stroke-width="1.6"/></g>
+        <g transform="translate(370,430)"><rect class="sh h2" x="-13" y="-9" width="26" height="18" rx="3" stroke-width="1.6"/></g>
+        <g transform="translate(370,480)"><rect class="sh h3" x="-13" y="-9" width="26" height="18" rx="3" stroke-width="1.6"/></g>
+      </g>
+      <!-- embedding gate -->
+      <ellipse cx="880" cy="420" rx="30" ry="170" fill="url(#gCyan)"/>
+      <line x1="880" y1="270" x2="880" y2="570" stroke="url(#gate)" stroke-width="2.2"/>
+      <text x="880" y="248" text-anchor="middle" class="lbC">EMBEDDING</text>
+      <!-- vector database cylinder -->
+      <g stroke="#1E5560" stroke-width="2">
+        <path d="M1180 250 V520 A200 46 0 0 0 1580 520 V250" fill="#06262C" fill-opacity=".16"/>
+        <ellipse cx="1380" cy="390" rx="200" ry="46" fill="none" opacity=".18"/>
+        <ellipse cx="1380" cy="250" rx="200" ry="46" fill="#04181C" fill-opacity=".5"/>
+      </g>
+      <g><animateTransform attributeName="transform" type="rotate" values="-4 1380 390;4 1380 390;-4 1380 390" dur="26s" repeatCount="indefinite"/>
+        <path d="M1392 390 L1400 400 L1393 414 L1369 424 L1336 419 L1309 397 L1305 363 L1333 330 L1389 313 L1456 323 L1507 363 L1517 422 L1475 479 L1389 511 L1286 501 L1230 447" stroke="#10333B" stroke-width="1.2" fill="none"/>
+        <g fill="#67D8E8"><circle class="w1" cx="1392" cy="390" r="2"/><circle class="w2" cx="1393" cy="414" r="2.2"/><circle class="w3" cx="1336" cy="419" r="2.2"/><circle class="w1" cx="1305" cy="363" r="2.2"/><circle class="w2" cx="1389" cy="313" r="2.8"/><circle class="w3" cx="1507" cy="363" r="2.8"/><circle class="w1" cx="1475" cy="479" r="2.8"/><circle class="w2" cx="1286" cy="501" r="2.4"/><circle class="w3" cx="1230" cy="447" r="2.2"/></g>
+      </g>
+      <ellipse cx="1380" cy="390" rx="12" ry="8" fill="none" stroke="#7FE3F2" stroke-width="1.6"><animate attributeName="rx" values="12;200;200" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/><animate attributeName="ry" values="8;130;130" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".85;0;0" keyTimes="0;.5;1" dur="5s" repeatCount="indefinite"/></ellipse>
+      <text x="1380" y="620" text-anchor="middle" class="lbC">VECTOR DATABASE · SIMILARITY SEARCH</text>
+      <!-- BRIDGE → stage 3 -->
+      <path class="fl" d="M1580 400 C 1750 400 1850 400 2160 400" stroke="#215F63" stroke-width="1.6"/>
+    </g>
+
+    <!-- ============ STAGE 3 · INTELLIGENCE ============ -->
+    <g transform="translate(5760,0)">
+      <ellipse cx="900" cy="380" rx="820" ry="360" fill="url(#fB)" class="dr"/>
+      <!-- prompt block -->
+      <circle cx="420" cy="400" r="130" fill="url(#gVio)" opacity=".35"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3s" repeatCount="indefinite" additive="sum"/>
+        <rect x="368" y="348" width="104" height="104" rx="16" fill="#0A0C16" stroke="#7186E8" stroke-width="2"/>
+        <path d="M390 378 h60 M390 400 h60 M390 422 h38" stroke="#4A5CC0" stroke-width="3"/>
+      </g>
+      <text x="420" y="510" text-anchor="middle" class="lbB">PROMPT</text>
+      <!-- minds -->
+      <g stroke="#3D4E9E" stroke-width="1.5" fill="none" opacity=".5"><path class="fl" d="M480 380 L800 250"/><path class="fl" d="M480 410 L780 520"/><path class="fl" d="M480 400 L1020 480"/></g>
+      <g><g class="m0"><circle cx="860" cy="250" r="56" fill="url(#gCl)" opacity=".5"/><circle cx="860" cy="250" r="16" fill="none" stroke="#F5B08E"><animate attributeName="r" values="16;52;16" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle></g>
+        <use href="#brain" color="#E0885A" transform="translate(860,250) scale(1.1)"/><text x="860" y="182" text-anchor="middle" class="mn">CLAUDE</text></g>
+      <g><g class="m1"><circle cx="820" cy="530" r="52" fill="url(#gGp)" opacity=".5"/><circle cx="820" cy="530" r="15" fill="none" stroke="#6FE0BD"><animate attributeName="r" values="15;48;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle></g>
+        <use href="#brain" color="#26B896" transform="translate(820,530)"/><text x="820" y="600" text-anchor="middle" class="mn">GPT</text></g>
+      <g><g class="m2"><circle cx="1080" cy="480" r="52" fill="url(#gGe)" opacity=".5"/><circle cx="1080" cy="480" r="15" fill="none" stroke="#93BCF9"><animate attributeName="r" values="15;48;15" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle></g>
+        <use href="#brain" color="#5E97F6" transform="translate(1080,480)"/><text x="1080" y="550" text-anchor="middle" class="mn">GEMINI</text></g>
+      <!-- decision -->
+      <g stroke="#2E3A5E" stroke-width="1.3" fill="none"><path d="M906 262 C 1120 300 1280 360 1388 392"/><path d="M862 522 C 1080 500 1280 440 1390 404"/></g>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1.16;1" dur="2.6s" repeatCount="indefinite" additive="sum"/><path d="M1400 374 L1426 400 L1400 426 L1374 400 Z" fill="#0C0C18" stroke="#8B5CF6" stroke-width="2"/></g>
+      <text x="1400" y="352" text-anchor="middle" class="lbV">DECIDE</text>
+      <g fill="#F2F4FE"><circle r="2.6"><animateMotion dur="1.8s" repeatCount="indefinite" path="M906 262 C 1120 300 1280 360 1388 392"/></circle><circle r="2.6"><animateMotion dur="1.8s" begin="-.9s" repeatCount="indefinite" path="M862 522 C 1080 500 1280 440 1390 404"/></circle></g>
+      <!-- BRIDGE → stage 4 (ACT) -->
+      <path class="fl" d="M1420 415 C 1650 470 1800 500 2160 540" stroke="#6D4FCE" stroke-width="1.8"/>
+      <text x="1560" y="470" class="lbV" opacity=".8">ACT</text>
+    </g>
+
+    <!-- ============ STAGE 4 · AGENTS ============ -->
+    <g transform="translate(7680,0)">
+      <ellipse cx="960" cy="300" rx="860" ry="350" fill="url(#fV)" class="dr"/>
+      <!-- orchestrator -->
+      <circle cx="960" cy="130" r="66" fill="url(#gVio)"/>
+      <circle cx="960" cy="130" r="26" fill="none" stroke="#6D4FCE" stroke-width="1.2" stroke-dasharray="3 7"><animateTransform attributeName="transform" type="rotate" from="0 960 130" to="360 960 130" dur="26s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="130" r="9" fill="#F3EEFF"/>
+      <text x="960" y="72" text-anchor="middle" class="lbV">ORCHESTRATOR</text>
+      <g stroke="#241E33" stroke-width="1.2"><path d="M960 140 L360 470"/><path d="M960 140 L760 470"/><path d="M960 140 L1160 470"/><path d="M960 140 L1560 470"/></g>
+      <g fill="#A78BFA">
+        <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" path="M960 140 L360 470"/></circle>
+        <circle r="3"><animateMotion dur="2.2s" begin="-.55s" repeatCount="indefinite" path="M960 140 L760 470"/></circle>
+        <circle r="3"><animateMotion dur="2.2s" begin="-1.1s" repeatCount="indefinite" path="M960 140 L1160 470"/></circle>
+        <circle r="3"><animateMotion dur="2.2s" begin="-1.65s" repeatCount="indefinite" path="M960 140 L1560 470"/></circle>
+      </g>
+      <!-- back row -->
+      <g filter="url(#bF)" opacity=".75">
+        <g transform="translate(560,320) scale(.72)"><use href="#bot" color="#FB923C"/><use href="#desk"/></g>
+        <g transform="translate(1360,320) scale(.72)"><use href="#bot" color="#2DD4BF"/><use href="#desk"/></g>
+      </g>
+      <!-- front row -->
+      <g transform="translate(360,520)"><use href="#bot" color="#A78BFA"/><g transform="translate(36,-30)"><g class="sw"><use href="#hammer"/></g></g><use href="#desk"/>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.4s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="6.3s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.4s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="6.3s" repeatCount="indefinite"/></circle></g>
+      <text x="360" y="618" text-anchor="middle" class="nm">CODING</text>
+      <g transform="translate(760,520)"><use href="#bot" color="#22D3EE"/><g transform="translate(36,-30)"><g class="sw"><use href="#wrench"/></g></g><use href="#desk"/>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.7s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.7s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/></circle></g>
+      <text x="760" y="618" text-anchor="middle" class="nm">RESEARCH</text>
+      <g transform="translate(1160,520)"><use href="#bot" color="#60A5FA"/><g transform="translate(36,-30)"><g class="sw"><use href="#hammer"/></g></g><use href="#desk"/>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.2s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="6.7s" begin="-3.1s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.2s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="6.7s" begin="-3.1s" repeatCount="indefinite"/></circle></g>
+      <text x="1160" y="618" text-anchor="middle" class="nm">SALES</text>
+      <g transform="translate(1560,520)"><use href="#bot" color="#34D399"/><g transform="translate(36,-30)"><g class="sw"><use href="#wrench"/></g></g><use href="#desk"/>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="-10;-6;-10" dur="3.9s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="7.6s" begin="-4.9s" repeatCount="indefinite"/></circle>
+        <circle cy="-44" r="2.6"><animate attributeName="cx" values="6;10;6" dur="3.9s" repeatCount="indefinite"/><animate attributeName="fill" values="#60A5FA;#60A5FA;#FB923C;#FB923C;#34D399;#34D399;#60A5FA" keyTimes="0;.3;.36;.68;.74;.94;1" dur="7.6s" begin="-4.9s" repeatCount="indefinite"/></circle></g>
+      <text x="1560" y="618" text-anchor="middle" class="nm">SUPPORT</text>
+      <line x1="200" y1="650" x2="1720" y2="650" stroke="#17141F" stroke-width="1.5"/>
+      <!-- BRIDGE → stage 5 -->
+      <path class="flB" d="M1640 560 C 1800 540 1900 500 2200 460" stroke="#8B5CF6" stroke-width="1.5" opacity=".6"/>
+    </g>
+
+    <!-- ============ STAGE 5 · AUTOMATION ============ -->
+    <g transform="translate(9600,0)">
+      <ellipse cx="1100" cy="400" rx="820" ry="360" fill="url(#fO)" class="dr"/>
+      <!-- dispatcher robot -->
+      <circle cx="280" cy="396" r="60" fill="url(#gVio)" opacity=".7"/>
+      <ellipse cx="280" cy="450" rx="32" ry="6" fill="#0A0810"/>
+      <use href="#bot" color="#A78BFA" transform="translate(280,438)"/>
+      <text x="280" y="486" text-anchor="middle" class="lbV" font-size="10">TRIGGERS</text>
+      <line x1="322" y1="400" x2="700" y2="400" stroke="#241F36" stroke-width="1.5"/>
+      <line x1="322" y1="400" x2="700" y2="400" class="flB" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+      <!-- engine -->
+      <circle cx="760" cy="400" r="60" fill="url(#gOr)"/>
+      <g><animateTransform attributeName="transform" type="scale" values="1;1.14;1" dur="2.8s" repeatCount="indefinite" additive="sum"/><path d="M760 372 L788 400 L760 428 L732 400 Z" fill="#0C0A10" stroke="#FB923C" stroke-width="2"/></g>
+      <text x="760" y="342" text-anchor="middle" class="lbO">AUTOMATION ENGINE</text>
+      <!-- rails -->
+      <g>
+        <path class="flB" d="M760 400 C 1000 400 1200 160 1440 160" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+        <path class="flB" d="M760 400 C 1000 400 1200 256 1440 256" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+        <path class="flB" d="M760 400 C 1000 396 1200 352 1440 352" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+        <path class="flB" d="M760 400 C 1000 404 1200 448 1440 448" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+        <path class="flB" d="M760 400 C 1000 408 1200 544 1440 544" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+        <path class="flB" d="M760 400 C 1000 412 1200 640 1440 640" stroke="#FB923C" stroke-width="1.3" opacity=".3"/>
+      </g>
+      <g fill="#FB923C">
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 400 1200 160 1440 160"/></rect>
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" begin="-.66s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 400 1200 256 1440 256"/></rect>
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" begin="-1.33s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 396 1200 352 1440 352"/></rect>
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" begin="-2s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 404 1200 448 1440 448"/></rect>
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" begin="-2.66s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 408 1200 544 1440 544"/></rect>
+        <rect x="-8" y="-4" width="16" height="8" rx="4"><animateMotion dur="4s" begin="-3.33s" rotate="auto" repeatCount="indefinite" path="M760 400 C 1000 412 1200 640 1440 640"/></rect>
+      </g>
+      <!-- stations -->
+      <g>
+        <rect x="1440" y="140" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgSlack" transform="translate(1464,160)"/><text x="1536" y="164" text-anchor="middle" class="lb">SLACK</text>
+        <rect x="1440" y="236" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgGmail" transform="translate(1464,256)"/><text x="1536" y="260" text-anchor="middle" class="lb">GMAIL</text>
+        <rect x="1440" y="332" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgGithub" transform="translate(1464,352)"/><text x="1536" y="356" text-anchor="middle" class="lb">GITHUB</text>
+        <rect x="1440" y="428" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgStripe" transform="translate(1464,448)"/><text x="1536" y="452" text-anchor="middle" class="lb">STRIPE</text>
+        <rect x="1440" y="524" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgSheets" transform="translate(1464,544)"/><text x="1536" y="548" text-anchor="middle" class="lb">SHEETS</text>
+        <rect x="1440" y="620" width="150" height="40" rx="10" fill="#08070C" stroke="#241F36" stroke-width="1.4"/><use href="#lgCrm" transform="translate(1464,640)"/><text x="1536" y="644" text-anchor="middle" class="lb">CRM</text>
+      </g>
+      <g fill="none" stroke="#34D399" stroke-width="2">
+        <circle cx="1440" cy="160" r="9"><animate attributeName="r" values="9;9;22" keyTimes="0;.88;1" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.85;0" keyTimes="0;.86;.92;1" dur="4s" repeatCount="indefinite"/></circle>
+        <circle cx="1440" cy="352" r="9"><animate attributeName="r" values="9;9;22" keyTimes="0;.88;1" dur="4s" begin="-1.33s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.85;0" keyTimes="0;.86;.92;1" dur="4s" begin="-1.33s" repeatCount="indefinite"/></circle>
+        <circle cx="1440" cy="544" r="9"><animate attributeName="r" values="9;9;22" keyTimes="0;.88;1" dur="4s" begin="-2.66s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.85;0" keyTimes="0;.86;.92;1" dur="4s" begin="-2.66s" repeatCount="indefinite"/></circle>
+      </g>
+      <!-- BRIDGE → stage 6 -->
+      <path class="flB" d="M1600 400 C 1780 400 1900 400 2180 480" stroke="#FB923C" stroke-width="1.4" opacity=".4"/>
+    </g>
+
+    <!-- ============ STAGE 6 · PRODUCTION ============ -->
+    <g transform="translate(11520,0)">
+      <ellipse cx="700" cy="380" rx="760" ry="350" fill="url(#fG)" class="dr"/>
+      <!-- tower -->
+      <rect x="620" y="220" width="120" height="340" rx="14" fill="#07090C" stroke="#1E4034" stroke-width="2"/>
+      <path d="M640 280 h80 M640 340 h80 M640 400 h80 M640 460 h80" stroke="#132A22" stroke-width="2"/>
+      <circle cx="648" cy="252" r="3" fill="#34D399"><animate attributeName="opacity" values=".2;1;.2" dur="1.3s" repeatCount="indefinite"/></circle>
+      <circle cx="664" cy="252" r="3" fill="#34D399"><animate attributeName="opacity" values=".2;1;.2" dur="1.7s" begin="-.5s" repeatCount="indefinite"/></circle>
+      <circle cx="680" cy="252" r="3" fill="#FBBF24"><animate attributeName="opacity" values=".2;1;.2" dur="2.1s" begin="-1.1s" repeatCount="indefinite"/></circle>
+      <text x="680" y="588" text-anchor="middle" class="lbG">FASTAPI</text>
+      <line x1="680" y1="220" x2="680" y2="192" stroke="#1E4034" stroke-width="2"/>
+      <circle cx="680" cy="190" r="32" fill="url(#gGrn)"><animate attributeName="r" values="30;36;30" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="680" cy="190" r="5" fill="#D9FBE9"/>
+      <text x="730" y="186" class="lbG">HEALTH · OK</text>
+      <!-- docker conveyor -->
+      <line x1="180" y1="620" x2="616" y2="620" stroke="#1A1524" stroke-width="2"/>
+      <g transform="translate(200,604)"><g class="sl"><use href="#docker"/></g></g>
+      <g transform="translate(200,604)"><g class="sl" style="animation-delay:-1.2s"><use href="#docker"/></g></g>
+      <g transform="translate(200,604)"><g class="sl" style="animation-delay:-2.4s"><use href="#docker"/></g></g>
+      <text x="180" y="664" class="kS">CI / CD · DOCKER · DEPLOY</text>
+      <!-- cloud -->
+      <path d="M 926 198 a20 20 0 0 1 10 -38 a26 26 0 0 1 50 -10 a18 18 0 0 1 26 16 a15 15 0 0 1 -7 32 Z" stroke="#3A3352" stroke-width="2" fill="#08070E"/>
+      <text x="1006" y="148" class="kS">CLOUD</text>
+      <path class="fl" d="M712 208 C 800 190 850 200 918 198" stroke="#2E5D4C" stroke-width="1.5"/>
+      <!-- heartbeat -->
+      <path d="M180 716 H520 l18 -28 22 52 18 -24 H1000 l18 -28 22 52 18 -24 H1740" stroke="#123B2C" stroke-width="2" fill="none"/>
+      <path class="ecg" d="M180 716 H520 l18 -28 22 52 18 -24 H1000 l18 -28 22 52 18 -24 H1740" stroke="#34D399" stroke-width="2" fill="none"/>
+      <!-- business -->
+      <text x="1180" y="228" class="lbO" fill="#E8C56A">REVENUE ↗</text>
+      <g transform="translate(1180,340)">
+        <polyline points="0,110 60,92 120,100 180,64 240,76 300,36 360,50 420,18 480,26 540,0" stroke="#FBBF24" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="620" stroke-dashoffset="620"><animate attributeName="stroke-dashoffset" values="620;0;0" keyTimes="0;.55;1" dur="6s" repeatCount="indefinite"/></polyline>
+      </g>
+      <g transform="translate(1180,510)"><text class="kS">UPTIME</text><text y="36" class="kN" fill="#6EE7B7">99.9%</text></g>
+      <g transform="translate(1420,510)"><text class="kS">P95</text><text y="36" class="kN">184ms</text></g>
+      <g transform="translate(1640,510)"><text class="kS" fill="#B08A2E">HOURS SAVED</text>
+        <text y="36" class="kN" fill="#FBBF24"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.32;.34;1" dur="4.5s" repeatCount="indefinite"/>1,842</text>
+        <text y="36" class="kN" fill="#FBBF24" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.32;.34;.66;.68;1" dur="4.5s" repeatCount="indefinite"/>1,851</text>
+        <text y="36" class="kN" fill="#FBBF24" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.66;.68;1" dur="4.5s" repeatCount="indefinite"/>1,860</text>
+      </g>
+      <!-- BRIDGE → finale -->
+      <path class="fl" d="M1740 400 C 1850 400 1950 400 2160 400" stroke="#3A3352" stroke-width="1.5"/>
+    </g>
+
+    <!-- ============ STAGE 7 · THE VISION ============ -->
+    <g transform="translate(13440,0)">
+      <ellipse cx="960" cy="360" rx="900" ry="400" fill="url(#fV)" class="dr"/>
+      <!-- convergence -->
+      <g>
+        <circle r="3.4" fill="#EC7BC8"><animateMotion dur="3s" repeatCount="indefinite" path="M960 -40 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#E0885A"><animateMotion dur="3.2s" begin="-.4s" repeatCount="indefinite" path="M1800 60 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3.2s" begin="-.4s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#34D399"><animateMotion dur="2.8s" begin="-.8s" repeatCount="indefinite" path="M1960 380 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="2.8s" begin="-.8s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#FB923C"><animateMotion dur="3.3s" begin="-1.2s" repeatCount="indefinite" path="M1800 720 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3.3s" begin="-1.2s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#FBBF24"><animateMotion dur="3s" begin="-1.5s" repeatCount="indefinite" path="M960 800 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3s" begin="-1.5s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#A78BFA"><animateMotion dur="3.1s" begin="-1.9s" repeatCount="indefinite" path="M120 720 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3.1s" begin="-1.9s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#60A5FA"><animateMotion dur="3s" begin="-2.4s" repeatCount="indefinite" path="M-40 380 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3s" begin="-2.4s" repeatCount="indefinite"/></circle>
+        <circle r="3.4" fill="#22D3EE"><animateMotion dur="3.4s" begin="-2.8s" repeatCount="indefinite" path="M120 60 L960 340"/><animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.1;.85;1" dur="3.4s" begin="-2.8s" repeatCount="indefinite"/></circle>
+      </g>
+      <!-- the core -->
+      <circle cx="960" cy="340" r="150" fill="url(#gCore)" opacity=".85"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 960 340" to="360 960 340" dur="40s" repeatCount="indefinite"/><circle cx="960" cy="340" r="96" fill="none" stroke="#5B4585" stroke-width="1.1" stroke-dasharray="3 9"/></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="360 960 340" to="0 960 340" dur="28s" repeatCount="indefinite"/><circle cx="960" cy="340" r="70" fill="none" stroke="#7A5FC0" stroke-width="1.1" stroke-dasharray="40 140"/></g>
+      <circle cx="960" cy="340" r="13" fill="#FBF9FF"/>
+      <circle cx="960" cy="340" r="14" fill="none" stroke="#D8CBF8"><animate attributeName="r" values="14;68;14" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".85;0;.85" dur="3.4s" repeatCount="indefinite"/></circle>
+      <!-- reveal -->
+      <text x="960" y="560" text-anchor="middle" class="name n1" fill="url(#nameG)">REHAN NAZIR</text>
+      <text x="960" y="600" text-anchor="middle" class="role n2">AI SYSTEMS ENGINEER</text>
+      <text x="960" y="638" text-anchor="middle" class="sb n3">building production AI systems</text>
+      <text x="960" y="668" text-anchor="middle" class="sb n4" fill="#7A6FA0">designing autonomous intelligence</text>
+    </g>
+  </g>
+
+  <!-- ================= GRADE ================= -->
+  <rect width="1920" height="800" fill="url(#vig)"/>
+  <rect width="1920" height="800" filter="url(#grain)" opacity="0.5"/>
+
+  <!-- ================= CAPTIONS ================= -->
+  <text x="960" y="754" text-anchor="middle" class="cap c0">every system begins with a request.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c1">raw requests become understanding.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c2">meaning becomes math.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c3">reasoning becomes decision.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c4">autonomous agents run the work.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c5">retries. fallbacks. no humans woken.</text>
+  <text x="960" y="754" text-anchor="middle" class="cap c6">it ships. it scales. it pays.</text>
+
+  <!-- ================= SHUTTER · hides the loop seam ================= -->
+  <rect class="shut" width="1920" height="800" fill="#050505"/>
+</svg>

@@ -23,7 +23,7 @@
 
 <br/>
 
-<img src="assets/story.svg" alt="From request to production: how Rehan Nazir builds AI systems" width="100%" />
+<img src="assets/film.svg" alt="The System — a cinematic journey from request to production" width="100%" />
 
 </div>
 
