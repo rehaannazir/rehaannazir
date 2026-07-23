@@ -234,16 +234,18 @@ where new orchestration ideas get prototyped before they ship.
   Stats + Top Languages below are self-hosted SVGs (assets/stats-card.svg,
   assets/top-langs.svg), generated from real public GitHub API data —
   no third-party rendering service, so they can never 503 or rate-limit.
-  Views / Streak / Activity Graph still call small community badge
-  services (komarev, streak-stats, vercel activity-graph) since those
-  need to update live; they're independently confirmed working.
+  The shields.io Followers badge was dropped: it depends on shields.io's
+  shared GitHub-token pool, which intermittently returns
+  "UNABLE TO SELECT NEXT GITHUB TOKEN FROM POOL" — outside anyone's
+  control. Follower count already appears in the self-hosted Stats card
+  below. Views / Streak / Activity Graph still call small community
+  badge services (komarev, streak-stats, vercel activity-graph); all
+  three independently confirmed working.
 -->
 
 <div align="center">
 
 ![Views](https://komarev.com/ghpvc/?username=rehaannazir&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS)
-&nbsp;
-![Followers](https://img.shields.io/github/followers/rehaannazir?style=for-the-badge&logo=github&color=A855F7&labelColor=000000&label=FOLLOWERS)
 
 <br/><br/>
 
