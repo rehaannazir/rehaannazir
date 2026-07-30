@@ -27,24 +27,24 @@
   </g>
   <g>
     <rect x="132" y="52" width="103" height="62" rx="10" class="tile"/>
-    <text x="146" y="86" class="num">4</text>
+    <text x="146" y="86" class="num">5</text>
     <text x="146" y="102" class="lab">FOLLOWERS</text>
   </g>
   <g>
     <rect x="244" y="52" width="103" height="62" rx="10" class="tile"/>
-    <text x="258" y="86" class="num">3</text>
+    <text x="258" y="86" class="num">5</text>
     <text x="258" y="102" class="lab">FOLLOWING</text>
   </g>
   <g>
     <rect x="356" y="52" width="104" height="62" rx="10" class="tile"/>
-    <text x="370" y="86" class="num">1</text>
+    <text x="370" y="86" class="num">7</text>
     <text x="370" y="102" class="lab">TOTAL STARS</text>
   </g>
 
   <!-- contribution strip -->
   <rect x="20" y="128" width="440" height="46" rx="10" fill="#0A0710" stroke="#241D2E"/>
   <text x="36" y="149" class="lab" fill="#B98BF0">CONTRIBUTIONS · LAST 12 MONTHS</text>
-  <text x="36" y="167" class="num" font-size="20">222</text>
+  <text x="36" y="167" class="num" font-size="20">239</text>
 
   <!-- purely decorative pulse — not a data plot -->
   <g fill="#A855F7">
