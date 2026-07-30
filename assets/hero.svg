@@ -49,7 +49,7 @@
   <!-- ==================== LEFT: TEXT ==================== -->
   <rect x="56" y="120" width="70" height="2" rx="1" fill="url(#tick)"><animate attributeName="width" values="0;70" dur="1.2s" fill="freeze"/></rect>
   <text x="54" y="196" class="name" fill="url(#nm)">REHAN NAZIR</text>
-  <text x="58" y="230" class="role">AI PRODUCTION SYSTEMS ENGINEER</text>
+  <text x="58" y="230" class="role">PRODUCTION AI SYSTEMS ENGINEER</text>
   <circle cx="62" cy="264" r="3" fill="#A855F7"/><text x="74" y="268" class="meta">3rd-YEAR DATA SCIENCE STUDENT</text>
   <circle cx="346" cy="264" r="3" fill="#A855F7"/><text x="358" y="268" class="meta">FOUNDER @ NYVEXA</text>
 
