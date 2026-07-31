@@ -17,7 +17,7 @@
   <ellipse cx="450" cy="0" rx="400" ry="90" fill="url(#fgl)"/>
   <line x1="180" y1="40" x2="720" y2="40" stroke="url(#fg)" stroke-width="1.5"/>
   <text x="450" y="70" text-anchor="middle" class="q">“Data is the truth. AI is the intelligence.”</text>
-  <text x="450" y="102" text-anchor="middle" class="s">BUILDING NYVEXA — PAKISTAN'S LARGEST AI COMPANY</text>
+  <text x="450" y="102" text-anchor="middle" class="s">BUILDING NYVEXA — Engineering Tomorrow's Intelligence</text>
   <circle class="dot" cx="352" cy="98" r="2" fill="#A855F7"/>
   <circle class="dot" cx="548" cy="98" r="2" fill="#A855F7"/>
 </svg>
