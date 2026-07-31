@@ -21,12 +21,12 @@
   <!-- donut: real byte-share across all repos (fetched from GitHub languages API) —
        widened violet/indigo/magenta palette + small gaps so slices stay distinguishable -->
   <g class="donut">
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#A855F7" stroke-width="16" stroke-dasharray="205.2 134.1" stroke-dashoffset="0"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#4C1D95" stroke-width="16" stroke-dasharray="59.5 279.8" stroke-dashoffset="-209.2"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#F0ABFC" stroke-width="16" stroke-dasharray="23.4 315.9" stroke-dashoffset="-272.7"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#818CF8" stroke-width="16" stroke-dasharray="7.25 332.0" stroke-dashoffset="-300.1"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#F5D0FE" stroke-width="16" stroke-dasharray="7.16 332.1" stroke-dashoffset="-311.35"/>
-    <circle cx="90" cy="100" r="54" fill="none" stroke="#6D28D9" stroke-width="16" stroke-dasharray="12.77 326.5" stroke-dashoffset="-322.51"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#A855F7" stroke-width="16" stroke-dasharray="203.55 135.7" stroke-dashoffset="0"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#4C1D95" stroke-width="16" stroke-dasharray="59.34 279.9" stroke-dashoffset="-207.55"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#F0ABFC" stroke-width="16" stroke-dasharray="25.48 313.8" stroke-dashoffset="-270.89"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#818CF8" stroke-width="16" stroke-dasharray="7.19 332.1" stroke-dashoffset="-300.37"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#F5D0FE" stroke-width="16" stroke-dasharray="7.13 332.2" stroke-dashoffset="-311.56"/>
+    <circle cx="90" cy="100" r="54" fill="none" stroke="#6D28D9" stroke-width="16" stroke-dasharray="12.64 326.7" stroke-dashoffset="-322.69"/>
   </g>
   <circle cx="90" cy="100" r="38" fill="#000000"/>
   <text x="90" y="97" text-anchor="middle" class="pc" font-size="15" fill="#E9D5FF">6</text>
@@ -34,11 +34,11 @@
 
   <!-- legend -->
   <g>
-    <g class="row" style="animation-delay:.1s"><circle cx="196" cy="52" r="5" fill="#A855F7"/><text x="210" y="56" class="lg">Jupyter Notebook</text><text x="458" y="56" text-anchor="end" class="pc">65.1%</text></g>
-    <g class="row" style="animation-delay:.2s"><circle cx="196" cy="76" r="5" fill="#4C1D95"/><text x="210" y="80" class="lg">JavaScript</text><text x="458" y="80" text-anchor="end" class="pc">18.9%</text></g>
-    <g class="row" style="animation-delay:.3s"><circle cx="196" cy="100" r="5" fill="#F0ABFC"/><text x="210" y="104" class="lg">Python</text><text x="458" y="104" text-anchor="end" class="pc">7.4%</text></g>
+    <g class="row" style="animation-delay:.1s"><circle cx="196" cy="52" r="5" fill="#A855F7"/><text x="210" y="56" class="lg">Jupyter Notebook</text><text x="458" y="56" text-anchor="end" class="pc">64.6%</text></g>
+    <g class="row" style="animation-delay:.2s"><circle cx="196" cy="76" r="5" fill="#4C1D95"/><text x="210" y="80" class="lg">JavaScript</text><text x="458" y="80" text-anchor="end" class="pc">18.8%</text></g>
+    <g class="row" style="animation-delay:.3s"><circle cx="196" cy="100" r="5" fill="#F0ABFC"/><text x="210" y="104" class="lg">Python</text><text x="458" y="104" text-anchor="end" class="pc">8.1%</text></g>
     <g class="row" style="animation-delay:.4s"><circle cx="196" cy="124" r="5" fill="#818CF8"/><text x="210" y="128" class="lg">TypeScript</text><text x="458" y="128" text-anchor="end" class="pc">2.3%</text></g>
-    <g class="row" style="animation-delay:.5s"><circle cx="196" cy="148" r="5" fill="#F5D0FE"/><text x="210" y="152" class="lg">HTML</text><text x="458" y="152" text-anchor="end" class="pc">2.3%</text></g>
-    <g class="row" style="animation-delay:.6s"><circle cx="196" cy="172" r="5" fill="#6D28D9"/><text x="210" y="176" class="lg">Other</text><text x="458" y="176" text-anchor="end" class="pc">4.1%</text></g>
+    <g class="row" style="animation-delay:.5s"><circle cx="196" cy="148" r="5" fill="#F5D0FE"/><text x="210" y="152" class="lg">HTML</text><text x="458" y="152" text-anchor="end" class="pc">2.2%</text></g>
+    <g class="row" style="animation-delay:.6s"><circle cx="196" cy="172" r="5" fill="#6D28D9"/><text x="210" y="176" class="lg">Other</text><text x="458" y="176" text-anchor="end" class="pc">4.0%</text></g>
   </g>
 </svg>
