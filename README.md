@@ -235,31 +235,25 @@ where new orchestration ideas get prototyped before they ship.
 ## `08` — Signals
 
 <!--
-  Stats + Top Languages + Streak below are self-hosted SVGs
-  (assets/stats-card.svg, assets/top-langs.svg, assets/streak-card.svg),
-  generated from real GitHub data pulled directly from the API/contribution
-  calendar — no third-party rendering service, so they can never 503,
-  rate-limit, or serve a stale CDN-cached error. The shields.io Followers
-  badge was dropped earlier for the same reason (shared token-pool
-  failures); follower count lives in the Stats card. The streak card was
-  hardcoded after streak-stats.demolab.com started serving a cached
-  "Failed to retrieve contributions" error graphic for 24h at a time
-  (Cache-Control: max-age=86400) — not fixable by waiting, so it's now
-  computed straight from GitHub's own contribution calendar. All three
-  need manual resync when the underlying numbers change; ping for a
-  refresh, or wire up a scheduled Action to automate it.
+  Streak below is a self-hosted SVG (assets/streak-card.svg), generated
+  from real GitHub data pulled directly from the contribution calendar —
+  no third-party rendering service, so it can never 503, rate-limit, or
+  serve a stale CDN-cached error. It was hardcoded after
+  streak-stats.demolab.com started serving a cached "Failed to retrieve
+  contributions" error graphic for 24h at a time (Cache-Control:
+  max-age=86400) — not fixable by waiting. Needs manual resync when the
+  underlying numbers change; ping for a refresh, or wire up a scheduled
+  Action to automate it.
   Views / Activity Graph still call small community badge services
   (komarev, vercel activity-graph); both independently confirmed working.
+  Stats card and Top Languages donut were removed from this section —
+  files remain at assets/stats-card.svg and assets/top-langs.svg,
+  unreferenced.
 -->
 
 <div align="center">
 
 ![Views](https://komarev.com/ghpvc/?username=rehaannazir&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS)
-
-<br/><br/>
-
-<img height="195" src="assets/stats-card.svg" alt="GitHub stats" />
-<img height="195" src="assets/top-langs.svg" alt="Top languages" />
 
 <br/><br/>
 
