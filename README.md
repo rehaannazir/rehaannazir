@@ -23,27 +23,33 @@ Founder at **Nyvexa**. Based in Lahore, Pakistan.
 
 ## Focus
 
-- Multi-agent orchestration and coordination
-- Retrieval-augmented generation and knowledge systems
-- Memory architectures for long-horizon agent tasks
-- Typed, observable service layers for LLM applications
-- Evaluation and reliability for non-deterministic systems
+Multi-agent orchestration and coordination
+Retrieval-augmented generation and knowledge systems
+Memory architectures for long-horizon agent tasks
+Typed, observable service layers for LLM applications
+Evaluation and reliability for non-deterministic systems
 
 <br/>
 
 ## Selected Systems
 
-**[Nyvexa Agent API](https://github.com/rehaannazir/Nyvexa-Agent-API)** — FastAPI and LangChain agent service, the orchestration layer behind Nyvexa.
+**[Nyvexa Agent API](https://github.com/rehaannazir/Nyvexa-Agent-API)**
+FastAPI and LangChain agent service — the orchestration layer behind Nyvexa.
 
-**[Lead Enrichment Pipeline](https://github.com/rehaannazir/Lead_Enrichment-Automation-n8n-)** — Production n8n pipeline: validation, enrichment, CRM dedup, scoring, routing.
+**[Lead Enrichment Pipeline](https://github.com/rehaannazir/Lead_Enrichment-Automation-n8n-)**
+Production n8n pipeline: validation, enrichment, CRM dedup, scoring, routing.
 
-**[AI Content Automation](https://github.com/rehaannazir/AI-Content-Automation)** — LLM-driven content pipeline, brief to publish-ready output with no manual steps.
+**[AI Content Automation](https://github.com/rehaannazir/AI-Content-Automation)**
+LLM-driven content pipeline — brief to publish-ready output, no manual steps.
 
-**[Gemini API Deep Dive](https://github.com/rehaannazir/Gemini-API-Deep-Dive)** — Structured output, function calling, streaming, and token control in practice.
+**[Gemini API Deep Dive](https://github.com/rehaannazir/Gemini-API-Deep-Dive)**
+Structured output, function calling, streaming, and token control in practice.
 
-**[FastAPI JWT Book Store](https://github.com/rehaannazir/FastAPI-JWT-Book-Store)** — Typed REST API with JWT auth, ownership-scoped resources, and test coverage.
+**[FastAPI JWT Book Store](https://github.com/rehaannazir/FastAPI-JWT-Book-Store)**
+Typed REST API with JWT auth, ownership-scoped resources, and test coverage.
 
-**[DocQA CLI](https://github.com/rehaannazir/DocQA-CLI)** — Command-line document Q&A over local files using retrieval-augmented generation.
+**[DocQA CLI](https://github.com/rehaannazir/DocQA-CLI)**
+Command-line document Q&A over local files using retrieval-augmented generation.
 
 <br/>
 
