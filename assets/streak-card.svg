@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 195" width="900" height="195" fill="none" role="img" aria-label="GitHub streak for rehaannazir">
+  <defs>
+    <radialGradient id="fireG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E9D5FF"/><stop offset="1" stop-color="#A855F7"/>
+    </radialGradient>
+    <style>
+      .ttl{font:700 13px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#EDEDF2;letter-spacing:2px}
+      .sub{font:500 10px ui-monospace,Consolas,monospace;fill:#5A5468}
+      .num{font:800 30px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#E9D5FF}
+      .numB{font:800 34px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#F3E8FF}
+      .lab{font:600 12px ui-monospace,Consolas,monospace;fill:#8A8698;letter-spacing:1px}
+      .range{font:500 10.5px ui-monospace,Consolas,monospace;fill:#4A4458}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+      .live{animation:pulse 1.8s ease-in-out infinite}
+      @keyframes ringPulse{0%,100%{opacity:0.85}50%{opacity:1}}
+      .ring{animation:ringPulse 2.6s ease-in-out infinite;transform-origin:450px 78px}
+      @keyframes riseIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+      .cell{opacity:0;animation:riseIn .5s ease forwards}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="193" rx="14" fill="#000000" stroke="#17141C"/>
+
+  <circle class="live" cx="22" cy="24" r="3" fill="#A855F7"/>
+  <text x="32" y="28" class="ttl">STREAK</text>
+  <text x="878" y="28" text-anchor="end" class="sub">@rehaannazir</text>
+  <line x1="20" y1="38" x2="880" y2="38" stroke="#17141C"/>
+
+  <line x1="300" y1="55" x2="300" y2="175" stroke="#1C1826"/>
+  <line x1="600" y1="55" x2="600" y2="175" stroke="#1C1826"/>
+
+  <!-- Total Contributions -->
+  <g class="cell" style="animation-delay:.1s">
+    <text x="150" y="98" text-anchor="middle" class="num">277</text>
+    <text x="150" y="128" text-anchor="middle" class="lab">TOTAL CONTRIBUTIONS</text>
+    <text x="150" y="150" text-anchor="middle" class="range">last 12 months</text>
+  </g>
+
+  <!-- Current Streak (ring + flame, center) -->
+  <g class="cell" style="animation-delay:.2s">
+    <g class="ring">
+      <circle cx="450" cy="78" r="44" fill="none" stroke="#A855F7" stroke-width="4"/>
+    </g>
+    <path transform="translate(450,32)" fill="url(#fireG)" d="M1.5,0.67c0,0,0.74,2.65,0.74,4.8c0,2.06-1.35,3.73-3.41,3.73c-2.06,0-3.62-1.67-3.62-3.73l0.03-0.36c-2.02,2.4-3.24,5.51-3.24,8.88c0,4.42,3.58,8.01,8,8.01s8-3.59,8-8.01C8,8.6,5.41,3.79,1.5,0.67z"/>
+    <text x="450" y="92" text-anchor="middle" class="numB">7</text>
+    <text x="450" y="130" text-anchor="middle" class="lab" fill="#C9A9F5">CURRENT STREAK</text>
+    <text x="450" y="150" text-anchor="middle" class="range">Jul 29 - Aug 4</text>
+  </g>
+
+  <!-- Longest Streak -->
+  <g class="cell" style="animation-delay:.3s">
+    <text x="750" y="98" text-anchor="middle" class="num">10</text>
+    <text x="750" y="128" text-anchor="middle" class="lab">LONGEST STREAK</text>
+    <text x="750" y="150" text-anchor="middle" class="range">Jun 21 - Jun 30</text>
+  </g>
+</svg>

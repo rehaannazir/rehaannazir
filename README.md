@@ -231,16 +231,21 @@ where new orchestration ideas get prototyped before they ship.
 ## `07` — Signals
 
 <!--
-  Stats + Top Languages below are self-hosted SVGs (assets/stats-card.svg,
-  assets/top-langs.svg), generated from real public GitHub API data —
-  no third-party rendering service, so they can never 503 or rate-limit.
-  The shields.io Followers badge was dropped: it depends on shields.io's
-  shared GitHub-token pool, which intermittently returns
-  "UNABLE TO SELECT NEXT GITHUB TOKEN FROM POOL" — outside anyone's
-  control. Follower count already appears in the self-hosted Stats card
-  below. Views / Streak / Activity Graph still call small community
-  badge services (komarev, streak-stats, vercel activity-graph); all
-  three independently confirmed working.
+  Stats + Top Languages + Streak below are self-hosted SVGs
+  (assets/stats-card.svg, assets/top-langs.svg, assets/streak-card.svg),
+  generated from real GitHub data pulled directly from the API/contribution
+  calendar — no third-party rendering service, so they can never 503,
+  rate-limit, or serve a stale CDN-cached error. The shields.io Followers
+  badge was dropped earlier for the same reason (shared token-pool
+  failures); follower count lives in the Stats card. The streak card was
+  hardcoded after streak-stats.demolab.com started serving a cached
+  "Failed to retrieve contributions" error graphic for 24h at a time
+  (Cache-Control: max-age=86400) — not fixable by waiting, so it's now
+  computed straight from GitHub's own contribution calendar. All three
+  need manual resync when the underlying numbers change; ping for a
+  refresh, or wire up a scheduled Action to automate it.
+  Views / Activity Graph still call small community badge services
+  (komarev, vercel activity-graph); both independently confirmed working.
 -->
 
 <div align="center">
@@ -254,7 +259,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <br/><br/>
 
-<img width="60%" src="https://streak-stats.demolab.com/?user=rehaannazir&hide_border=true&background=000000&ring=A855F7&fire=C084FC&currStreakNum=C9C4D4&sideNums=C9C4D4&currStreakLabel=A855F7&sideLabels=8A8698&dates=4A4458" />
+<img width="90%" src="assets/streak-card.svg" alt="GitHub streak" />
 
 <br/><br/>
 
