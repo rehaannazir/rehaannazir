@@ -21,15 +21,19 @@
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=A855F7&labelColor=000000)](https://github.com/rehaannazir)
 
-<br/>
-
-<img src="assets/film.svg" alt="The System — a cinematic journey from request to production" width="100%" />
-
 </div>
 
 <img src="assets/divider.svg" width="100%" />
 
-## `01` — Live Status
+## `01` — The System
+
+<div align="center">
+<img src="assets/film.svg" alt="The System — a cinematic journey from request to production" width="100%" />
+</div>
+
+<img src="assets/divider.svg" width="100%" />
+
+## `02` — Live Status
 
 <div align="center">
 <img src="assets/terminal.svg" alt="Live status" width="100%" />
@@ -37,7 +41,7 @@
 
 <img src="assets/divider.svg" width="100%" />
 
-## `02` — Engineering Philosophy
+## `03` — Engineering Philosophy
 
 > **I build systems that run without me in the loop.**
 >
@@ -49,7 +53,7 @@
 
 <img src="assets/divider.svg" width="100%" />
 
-## `03` — What I Build
+## `04` — What I Build
 
 <table>
 <tr>
@@ -104,7 +108,7 @@ Instrumented services with logging, background tasks, and clean layered architec
 
 <img src="assets/divider.svg" width="100%" />
 
-## `04` — Featured Systems
+## `05` — Featured Systems
 
 <table>
 <tr><td width="50%" valign="top">
@@ -204,7 +208,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <img src="assets/divider.svg" width="100%" />
 
-## `05` — Tech Stack
+## `06` — Tech Stack
 
 <table>
 <tr><td width="140"><b>AI / LLM</b></td><td>LangChain · LangGraph · RAG · Prompt Engineering · Function Calling · Gemini · OpenAI APIs</td></tr>
@@ -220,7 +224,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <img src="assets/divider.svg" width="100%" />
 
-## `06` — System Architecture
+## `07` — System Architecture
 
 <div align="center">
 <img src="assets/architecture.svg" alt="AI system architecture" width="100%" />
@@ -228,7 +232,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <img src="assets/divider.svg" width="100%" />
 
-## `07` — Signals
+## `08` — Signals
 
 <!--
   Stats + Top Languages + Streak below are self-hosted SVGs
@@ -269,23 +273,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <img src="assets/divider.svg" width="100%" />
 
-## `08` — How I Ship
-
-<div align="center">
-<img src="assets/workflow.svg" alt="Development workflow" width="100%" />
-</div>
-
-<img src="assets/divider.svg" width="100%" />
-
-## `09` — Roadmap
-
-<div align="center">
-<img src="assets/roadmap.svg" alt="Current roadmap" width="100%" />
-</div>
-
-<img src="assets/divider.svg" width="100%" />
-
-## `10` — Open Source
+## `09` — Open Source
 
 - **Build in public.** Every system above ships with documentation and a clear architecture.
 - **Reusable primitives.** Structured-output, agent, and RAG patterns extracted for reuse.
@@ -293,7 +281,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <img src="assets/divider.svg" width="100%" />
 
-## `11` — Connect
+## `10` — Connect
 
 <div align="center">
 
