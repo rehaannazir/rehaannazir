@@ -30,7 +30,7 @@
 
   <!-- Total Contributions -->
   <g class="cell" style="animation-delay:.1s">
-    <text x="150" y="98" text-anchor="middle" class="num">277</text>
+    <text x="150" y="98" text-anchor="middle" class="num">286</text>
     <text x="150" y="128" text-anchor="middle" class="lab">TOTAL CONTRIBUTIONS</text>
     <text x="150" y="150" text-anchor="middle" class="range">last 12 months</text>
   </g>
@@ -41,9 +41,9 @@
       <circle cx="450" cy="78" r="44" fill="none" stroke="#A855F7" stroke-width="4"/>
     </g>
     <path transform="translate(450,32)" fill="url(#fireG)" d="M1.5,0.67c0,0,0.74,2.65,0.74,4.8c0,2.06-1.35,3.73-3.41,3.73c-2.06,0-3.62-1.67-3.62-3.73l0.03-0.36c-2.02,2.4-3.24,5.51-3.24,8.88c0,4.42,3.58,8.01,8,8.01s8-3.59,8-8.01C8,8.6,5.41,3.79,1.5,0.67z"/>
-    <text x="450" y="92" text-anchor="middle" class="numB">7</text>
+    <text x="450" y="92" text-anchor="middle" class="numB">1</text>
     <text x="450" y="130" text-anchor="middle" class="lab" fill="#C9A9F5">CURRENT STREAK</text>
-    <text x="450" y="150" text-anchor="middle" class="range">Jul 29 - Aug 4</text>
+    <text x="450" y="150" text-anchor="middle" class="range">Aug 6</text>
   </g>
 
   <!-- Longest Streak -->
