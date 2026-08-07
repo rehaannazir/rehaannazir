@@ -235,17 +235,29 @@ where new orchestration ideas get prototyped before they ship.
 ## `08` — Signals
 
 <!--
-  Streak below is a self-hosted SVG (assets/streak-card.svg), generated
-  from real GitHub data pulled directly from the contribution calendar —
-  no third-party rendering service, so it can never 503, rate-limit, or
-  serve a stale CDN-cached error. It was hardcoded after
-  streak-stats.demolab.com started serving a cached "Failed to retrieve
-  contributions" error graphic for 24h at a time (Cache-Control:
-  max-age=86400) — not fixable by waiting. Needs manual resync when the
-  underlying numbers change; ping for a refresh, or wire up a scheduled
-  Action to automate it.
-  Views / Activity Graph still call small community badge services
-  (komarev, vercel activity-graph); both independently confirmed working.
+  Streak + Activity below are self-hosted SVGs (assets/streak-card.svg,
+  assets/activity-graph.svg), generated from real GitHub data pulled
+  directly from the contribution calendar — no third-party rendering
+  service, so they can never 503, rate-limit, or serve a stale
+  CDN-cached error.
+  Streak was hardcoded after streak-stats.demolab.com started serving a
+  cached "Failed to retrieve contributions" error graphic for 24h at a
+  time (Cache-Control: max-age=86400) — not fixable by waiting.
+  Activity was hardcoded because the vercel activity-graph service only
+  reflects public repo events, not private ones. GitHub's own
+  contribution calendar (github.com/users/rehaannazir/contributions)
+  already folds private contributions into its per-day counts
+  (anonymized — no repo names or commit messages) as long as "Include
+  private contributions on my profile" stays checked in account
+  settings. activity-graph.svg is built from that same calendar data,
+  aggregated into weekly buckets, so it reflects public + private
+  activity. Note: GitHub only exposes contribution *intensity level*
+  (0-4) per day publicly, not exact commit counts — exact counts
+  require an authenticated token this profile doesn't have.
+  Both need manual resync when the underlying numbers change; ping for
+  a refresh, or wire up a scheduled Action to automate it.
+  Views still calls a small community badge service (komarev);
+  independently confirmed working.
   Stats card and Top Languages donut were removed from this section —
   files remain at assets/stats-card.svg and assets/top-langs.svg,
   unreferenced.
@@ -261,7 +273,7 @@ where new orchestration ideas get prototyped before they ship.
 
 <br/><br/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=rehaannazir&bg_color=000000&color=C9C4D4&line=A855F7&point=C084FC&area=true&hide_border=true" />
+<img width="100%" src="assets/activity-graph.svg" alt="Contribution activity, including private repositories" />
 
 </div>
 

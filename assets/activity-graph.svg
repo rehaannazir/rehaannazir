@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 195" width="900" height="195" fill="none" role="img" aria-label="Contribution activity for rehaannazir, including private repositories">
+  <defs>
+    <linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .ttl{font:700 13px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#EDEDF2;letter-spacing:2px}
+      .sub{font:500 10px ui-monospace,Consolas,monospace;fill:#5A5468}
+      .mo{font:500 9.5px ui-monospace,Consolas,monospace;fill:#4A4458}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+      .live{animation:pulse 1.8s ease-in-out infinite}
+      @keyframes draw{from{stroke-dashoffset:1200}to{stroke-dashoffset:0}}
+      .line{stroke-dasharray:1200;animation:draw 2.2s ease-out forwards}
+      @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+      .area{animation:fadeIn 1.6s ease-out .4s both}
+      @keyframes dotPulse{0%,100%{r:4;opacity:1}50%{r:7;opacity:.4}}
+      .endDot{animation:dotPulse 2.2s ease-in-out infinite}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="193" rx="14" fill="#000000" stroke="#17141C"/>
+
+  <circle class="live" cx="22" cy="24" r="3" fill="#A855F7"/>
+  <text x="32" y="28" class="ttl">ACTIVITY</text>
+  <text x="878" y="28" text-anchor="end" class="sub">public + private · 12 months</text>
+  <line x1="20" y1="38" x2="880" y2="38" stroke="#17141C"/>
+
+  <!-- chart area, offset +20,48 from generated coords (20,10)-(840,120) -->
+  <g transform="translate(20,48)">
+    <path class="area" fill="url(#areaG)" d="M0,120 L15.77,120 L31.54,120 L47.31,120 L63.08,120 L78.85,120 L94.62,120 L110.38,111.54 L126.15,120 L141.92,120 L157.69,120 L173.46,120 L189.23,120 L205,120 L220.77,120 L236.54,120 L252.31,111.54 L268.08,111.54 L283.85,120 L299.62,120 L315.38,120 L331.15,120 L346.92,120 L362.69,120 L378.46,120 L394.23,86.15 L410,120 L425.77,120 L441.54,120 L457.31,120 L473.08,120 L488.85,120 L504.62,120 L520.38,120 L536.15,120 L551.92,120 L567.69,120 L583.46,120 L599.23,120 L615,120 L630.77,120 L646.54,120 L662.31,120 L678.08,94.62 L693.85,35.38 L709.62,94.62 L725.38,10 L741.15,60.77 L756.92,86.15 L772.69,69.23 L788.46,52.31 L804.23,35.38 L820,60.77 L820,120 L0,120 Z"/>
+    <path class="line" fill="none" stroke="#C084FC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" d="M0,120 L15.77,120 L31.54,120 L47.31,120 L63.08,120 L78.85,120 L94.62,120 L110.38,111.54 L126.15,120 L141.92,120 L157.69,120 L173.46,120 L189.23,120 L205,120 L220.77,120 L236.54,120 L252.31,111.54 L268.08,111.54 L283.85,120 L299.62,120 L315.38,120 L331.15,120 L346.92,120 L362.69,120 L378.46,120 L394.23,86.15 L410,120 L425.77,120 L441.54,120 L457.31,120 L473.08,120 L488.85,120 L504.62,120 L520.38,120 L536.15,120 L551.92,120 L567.69,120 L583.46,120 L599.23,120 L615,120 L630.77,120 L646.54,120 L662.31,120 L678.08,94.62 L693.85,35.38 L709.62,94.62 L725.38,10 L741.15,60.77 L756.92,86.15 L772.69,69.23 L788.46,52.31 L804.23,35.38 L820,60.77"/>
+    <circle class="endDot" cx="820" cy="60.77" r="4" fill="#F3E8FF"/>
+    <circle cx="820" cy="60.77" r="3" fill="#F3E8FF"/>
+  </g>
+
+  <!-- month labels -->
+  <g class="mo">
+    <text x="22" y="182">Aug</text>
+    <text x="90" y="182">Sep</text>
+    <text x="160" y="182">Oct</text>
+    <text x="230" y="182">Nov</text>
+    <text x="300" y="182">Dec</text>
+    <text x="368" y="182">Jan</text>
+    <text x="436" y="182">Feb</text>
+    <text x="504" y="182">Mar</text>
+    <text x="572" y="182">Apr</text>
+    <text x="640" y="182">May</text>
+    <text x="708" y="182">Jun</text>
+    <text x="776" y="182">Jul</text>
+    <text x="838" y="182">Aug</text>
+  </g>
+</svg>
