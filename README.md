@@ -250,10 +250,10 @@ where new orchestration ideas get prototyped before they ship.
   (anonymized — no repo names or commit messages) as long as "Include
   private contributions on my profile" stays checked in account
   settings. activity-graph.svg is built from that same calendar data,
-  aggregated into weekly buckets, so it reflects public + private
-  activity. Note: GitHub only exposes contribution *intensity level*
-  (0-4) per day publicly, not exact commit counts — exact counts
-  require an authenticated token this profile doesn't have.
+  so it reflects public + private activity. Exact per-day counts are
+  parsed from the calendar's <tool-tip> elements (e.g. "22
+  contributions on January 26th."), giving true daily resolution — not
+  the 0-4 intensity levels on the day cells, which lose detail.
   Both need manual resync when the underlying numbers change; ping for
   a refresh, or wire up a scheduled Action to automate it.
   Views still calls a small community badge service (komarev);
